@@ -43,15 +43,20 @@
                     </ul>
                 </li>
                 <li >
+                    <a href="javascript:void"><i class="fa fa-product-hunt"></i> <span class="nav-label">Product</span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="{{route('admin.user.add')}}">Add New</a></li>
+                        <li><a href="{{route('admin.user.getAll')}}">All Products</a></li>
+                    </ul>
+                </li>
+                <li >
                     <a href="javascript:void"><i class="fa fa-cogs"></i> <span class="nav-label">Settings</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
 {{--                        <li><a href="{{route('admin.role.getAll')}}">Roles</a></li>--}}
                         <li><a href="{{route('admin.webConfig.getConfig')}}">Web Configurations</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="{{route('bid.getAll')}}"><i class="fa fa-users"></i> <span class="nav-label">Bid Offers</span></a>
-                </li>
+
               @endif
             @if(Auth::user()->type=='user')
 {{--            <li>--}}
