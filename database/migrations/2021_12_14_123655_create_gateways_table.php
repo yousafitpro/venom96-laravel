@@ -13,6 +13,7 @@ class CreateGatewaysTable extends Migration
      */
     public function up()
     {
+        Schema::dropIfExists('gateways');
         Schema::create('gateways', function (Blueprint $table) {
             $table->id();
             $table->string("title")->nullable()->default('N/A');
