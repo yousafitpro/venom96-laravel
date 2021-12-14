@@ -42,18 +42,28 @@
                         <li><a href="{{route('admin.user.getAll')}}">Users</a></li>
                     </ul>
                 </li>
+
                 <li >
-                    <a href="javascript:void"><i class="fa fa-product-hunt"></i> <span class="nav-label">Product</span> <span class="fa arrow"></span></a>
+                    <a href="{{route('admin.product.getAll')}}"><i class="fa fa-product-hunt"></i> <span class="nav-label">Product</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
-                        <li><a href="{{route('admin.user.add')}}">Add New</a></li>
-                        <li><a href="{{route('admin.user.getAll')}}">All Products</a></li>
+                        <li><a href="{{route('admin.product.add')}}">Add New</a></li>
+
+                        <li><a href="{{route('admin.product.getAll')}}">All Products</a></li>
+                        <li><a href="{{route('admin.category.getAll')}}">Categories</a></li>
                     </ul>
+                </li>
+                <li>
+                    <a href="{{route('admin.order.getAll')}}"><i class="fa fa-shopping-cart"></i> <span class="nav-label">Orders</span></a>
+                </li>
+                <li>
+                    <a href="{{route('admin.payment.getAll')}}"><i class="fa fa-credit-card-alt"></i> <span class="nav-label">Payments</span></a>
                 </li>
                 <li >
                     <a href="javascript:void"><i class="fa fa-cogs"></i> <span class="nav-label">Settings</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
 {{--                        <li><a href="{{route('admin.role.getAll')}}">Roles</a></li>--}}
                         <li><a href="{{route('admin.webConfig.getConfig')}}">Web Configurations</a></li>
+                        <li><a href="{{route('gateway.gatewaySettings')}}">Payment APIs</a></li>
                     </ul>
                 </li>
 
@@ -71,7 +81,6 @@
 {{--            <li>--}}
 {{--                <a href="{{ route('ligiscan.settings') }}"><i class="fa fa-users"></i> <span class="nav-label">legiscan Settings-09</span></a>--}}
 {{--            </li>                <li>--}}
-                <a href="#"><i class="fa fa-ticket"></i> <span class="nav-label">Menu option-3</span></a>
             </li>
 
 

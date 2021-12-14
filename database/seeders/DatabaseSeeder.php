@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\gateway;
 use App\Models\role;
 use App\Models\state;
 use App\Models\User;
@@ -32,6 +33,21 @@ class DatabaseSeeder extends Seeder
         $role->user_id="1";
         $role->name="User";
         $role->save();
+
+
+
+        $gw=new gateway();
+        $gw->title="Paypal";
+        $gw->email="temp@gmail.com";
+        $gw->status="1";
+        $gw->save();
+
+        $gw=new gateway();
+        $gw->title="Stripe";
+        $gw->public_key="key-43dfg3432dfg345fd4545gdfg45";
+        $gw->private_key="key-sfsd234234dfssdf34435";
+        $gw->status="1";
+        $gw->save();
 
 
 

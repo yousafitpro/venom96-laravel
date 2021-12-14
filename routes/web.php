@@ -38,8 +38,18 @@ include('webIncludes/admin.php');
 include('webIncludes/role.php');
 //post
 include('webIncludes/post.php');
-// bid
-include('webIncludes/bid.php');
+// product
+include('webIncludes/prodcut.php');
+// category
+include('webIncludes/category.php');
+// order
+include('webIncludes/orders.php');
+// payment
+include('webIncludes/payments.php');
+// gateway
+include('webIncludes/gateways.php');
+
+
 Route::any("reset",function (){
     $c1=\Illuminate\Support\Facades\Artisan::call('config:cache');
     $c2=\Illuminate\Support\Facades\Artisan::call('cache:clear');
