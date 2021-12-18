@@ -8,7 +8,7 @@
         <div style="width: 80%; float: left;" class=" topbarInputBox">
             <div class="topbarInput">
          <input placeholder="search for game or item" >
-                <i class="fas fa-search" style="float: right; zoom: 1.4; margin-right: 5px; color: grey"></i>
+                <i class="fas fa-search" style="float: right; zoom: 1.2; margin-top: 5px; margin-right: 5px; color: grey"></i>
             </div>
         </div>
         <div style="width: 10%;  float: left" class="top2-plususer">
