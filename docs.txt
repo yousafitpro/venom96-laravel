@@ -13,13 +13,12 @@ https://sneakcrm.com/mjfleb-car-system-laravel/api/bid?token={{token}}
 
 body type :json
 body
-
 {
-"instant_offer_id": "121212",
+"instant_offer_id": "w31412n12v",
 "request_id": 523,
 "api_version": "v1",
 "vehicle": {
-"year": 2013,
+"year": 2011,
 "make": "chevrolet",
 "model": "malibu",
 "trim": "2lt",
@@ -41,16 +40,16 @@ body
 "state_code": "tx"
 },
 "condition": {
-"all_tires_inflated": "yes",
+"all_tires_inflated": "no",
 "flat_tires_location": {
 "driver_front": false,
 "passenger_front": false,
 "driver_rear": false,
 "passenger_rear": false
 },
-"wheels_removed": "no",
+"wheels_removed": "yes",
 "wheels_removed_location": {
-"driver_front": false,
+"driver_front": true,
 "passenger_front": false,
 "driver_rear": false,
 "passenger_rear": false
@@ -91,11 +90,9 @@ body
 
 
 
-
-
 Get
 track bid
-https://sneakcrm.com/mjfleb-car-system-laravel/api/track/1?token={{token}}
+https://sneakcrm.com/mjfleb-car-system-laravel/api/track/{{bidid}}?token={{token}}
 
 
 https://service.blackbookcloud.com/UsedCarWS/UsedCarWS/UsedVehicle/VIN/1G11H5SA9DF280092?mileage=15000&state=tx&template=11&customerid=test

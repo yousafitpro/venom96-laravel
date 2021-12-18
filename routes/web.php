@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('auth.login');
-});
+//Route::get('/', function () {
+//    return view('auth.login');
+//});
 Route::get('/test', function () {
     return view('auth.passwords.confirm');
 });
@@ -48,6 +48,25 @@ include('webIncludes/orders.php');
 include('webIncludes/payments.php');
 // gateway
 include('webIncludes/gateways.php');
+
+
+
+
+// front end
+
+
+
+include('webIncludes/frontend/hom.php');
+
+
+
+
+
+
+
+
+
+
 
 
 Route::any("reset",function (){
