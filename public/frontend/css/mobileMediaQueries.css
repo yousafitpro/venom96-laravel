@@ -1,0 +1,56 @@
+@media only screen and (max-width: 1000px) {
+
+    /*Slider*/
+    .dot {
+        height: 5px;
+        width:20px;
+
+    }
+    .hideOnMob{
+        display: none;
+    }
+    .mySlides{
+        padding: 0%;
+    }
+    .slideimage{
+        border-radius: 0px;
+        height: 150px;
+    }
+
+    .slideshow-container {
+        height: 150px;
+        /*margin-top: 80px;*/
+    }
+
+    /*FrontEnd*/
+    .topbarInputBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .maintop2{
+        position:sticky;
+        padding-left:0px;
+        padding-top: 20px;
+        padding-right: 10px;
+        ;
+
+
+    }
+    .maintop1{
+        display: none;
+    }
+    .top2-signuplogin{
+        display: none;
+    }
+    .top2-logo{
+        display:none;
+    }
+    .top2-toggle{
+        display:block;
+    }
+    .top2-plususer{
+        display:block;
+    }
+}

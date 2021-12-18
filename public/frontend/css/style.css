@@ -8,7 +8,37 @@
 
 body{
     top: -20px;
+    overflow-x: hidden;
 }
+.gameCard
+{
+    width: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.container {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    overflow-x: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+}
+
+.item {
+    width: 100px;
+    flex-shrink: 0;
+    height: 100px;
+   margin-left: 100px;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
 .maintop1{
     margin-top: -20px;
     width: 100%;
@@ -40,12 +70,14 @@ a {
 .maintop2{
 min-width: 320px;
     width: 100%;
-    height: 90px;
+    height: 80px;
     padding-left: 5vw;
     padding-top: 10px;
     padding-right: 4vw;
     background:white;
+
     position: sticky;
+    z-index: 1;
 }
 .maintop2 ul{
     list-style: none;
@@ -84,6 +116,7 @@ min-width: 320px;
     left: 0;
     display: none;
     border-right: solid 1px lightgrey;
+    z-index: 2;
 }
 .top2-logo{
     display:block;
@@ -109,37 +142,9 @@ padding-left: 30px;
 }
 
 .gamecatcardtitle{
-    font-size: 15px; font-weight: bold; color: gray
+    font-size: 10px; font-weight: bold; color: gray
 }
-@media only screen and (max-width: 1000px) {
-
-    .topbarInputBox{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
-    .maintop2{
-
-        padding-left:0px;
-        padding-top: 20px;
-        padding-right: 10px;
-
-
-    }
-    .maintop1{
-        display: none;
-    }
-    .top2-signuplogin{
-        display: none;
-    }
-    .top2-logo{
-        display:none;
-    }
-    .top2-toggle{
-        display:block;
-    }
-    .top2-plususer{
-        display:block;
-    }
+.hideOnMob{
+   display: block;
 }
+
