@@ -12,15 +12,10 @@
     <br>
     <div class="row">
         <div class="col-md-12">
-            <div class="container-fluid">
-
-                <div class="row">
 
 
-                        <div class="col-md-12" >
-
-                            <div class="container">
-                                <div class="item">
+                            <div class="myitemcontainer">
+                                <div class="item" style="margin-left: 0px">
                                     <div   class="gameCard" >
                                         <div>
                                             <img class="gamecatcardimage" style="height: 100%; width: 100%" src="{{asset('myimages/gt.png')}}">
@@ -68,11 +63,6 @@
                             </div>
 
 
-                        </div>
-
-                </div>
-
-            </div>
         </div>
     </div>
     <br>

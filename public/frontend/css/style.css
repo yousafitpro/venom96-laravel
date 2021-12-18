@@ -17,7 +17,7 @@ body{
     padding-right: 10px;
 
 }
-.container {
+.myitemcontainer {
     width: 100%;
     height: 300px;
     display: flex;
@@ -26,14 +26,14 @@ body{
     scrollbar-width: none;
 }
 
-.item {
+.myitemcontainer .item {
     width: 100px;
     flex-shrink: 0;
     height: 100px;
-   margin-left: 100px;
+   margin-left:100px;
 }
 
-.container::-webkit-scrollbar {
+.myitemcontainer::-webkit-scrollbar {
     display: none;
 }
 
