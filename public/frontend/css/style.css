@@ -12,14 +12,14 @@ body{
 }
 .gameCard
 {
-    width: 150px;
+    width: 120px;
     padding-left: 10px;
     padding-right: 10px;
 
 }
 .myitemcontainer {
     width: 100%;
-    height: 300px;
+    height: 250px;
     display: flex;
     overflow-x: auto;
     -ms-overflow-style: none;  /* IE and Edge */
@@ -29,8 +29,11 @@ body{
 .myitemcontainer .item {
     width: 100px;
     flex-shrink: 0;
-    height: 100px;
-   margin-left:100px;
+    height:50px;
+   margin-left:60px;
+}
+.myitemcontainer .nextItem{
+    margin-left:100px;
 }
 
 .myitemcontainer::-webkit-scrollbar {
@@ -70,7 +73,7 @@ a {
 .maintop2{
 min-width: 320px;
     width: 100%;
-    height: 80px;
+    height: 70px;
     padding-left: 5vw;
     padding-top: 10px;
     padding-right: 4vw;
@@ -139,12 +142,17 @@ padding-left: 30px;
 }
 .gamecatcardimage{
     border-radius: 10px;
+    max-height: 180px;
+
 }
 
 .gamecatcardtitle{
     font-size: 10px; font-weight: bold; color: gray
 }
 .hideOnMob{
-   display: block;
+     display: block;
+ }
+.hideOnPC{
+    display: none;
 }
 
