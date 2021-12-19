@@ -73,6 +73,7 @@ Route::any("reset",function (){
     $c1=\Illuminate\Support\Facades\Artisan::call('config:cache');
     $c2=\Illuminate\Support\Facades\Artisan::call('cache:clear');
     $c3=\Illuminate\Support\Facades\Artisan::call('config:cache');
+    $c3=\Illuminate\Support\Facades\Artisan::call('view:clear');
     return "<---Restored--->";
 });
 
