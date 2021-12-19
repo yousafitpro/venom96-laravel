@@ -56,7 +56,7 @@ body{
 .myitemGamecontainer{
     width: 100%;
 }
-.myitemGamecontainer .item{
+.myitemGamecontainer .item2{
    float: left;
     width: 175px;
 
@@ -200,11 +200,4 @@ padding-left: 30px;
     display: none;
 }
 
-@media only screen and (max-width: 1000px) {
 
-    .myitemGamecontainer .item{
-        width: 100%;
-        background-color: red;
-
-    }
-}
