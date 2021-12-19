@@ -7,7 +7,7 @@
         <li><a href="#">About Us</a></li>
         <li><a href="#">Contact Us</a></li>
         <li><a href="#">Payment Methods</a></li>
-        <li style="float:right"><a class="active" href="#about"><span style="color: black; font-weight: bold">English/USD</span></a></li>
+        <li style="float:right"><a class="" href="#about"><span style="color: black; font-weight: bold">English/USD</span></a></li>
     </ul>
 
 </div>

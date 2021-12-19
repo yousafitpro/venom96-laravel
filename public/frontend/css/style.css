@@ -12,7 +12,7 @@ body{
 }
 .gameCard
 {
-    width: 120px;
+
     padding-left: 10px;
     padding-right: 10px;
 
@@ -27,13 +27,16 @@ body{
 }
 
 .myitemcontainer .item {
-    width: 100px;
+    width: 120px;
     flex-shrink: 0;
     height:50px;
-   margin-left:60px;
+   margin-left:30px;
 }
 .myitemcontainer .nextItem{
-    margin-left:100px;
+    width: 120px;
+    flex-shrink: 0;
+    height:50px;
+    margin-left:50px;
 }
 
 .myitemcontainer::-webkit-scrollbar {
@@ -142,8 +145,25 @@ padding-left: 30px;
 }
 .gamecatcardimage{
     border-radius: 10px;
-    max-height: 180px;
+    max-height: 120px;
+    width: 80%;
 
+
+}
+.gameItemcard{
+    background-color: red;
+
+    width: 300px;
+    padding-left: 80px;
+    padding-right: 80px;
+    max-width: 150px;
+    min-width: 150px;
+
+}
+.gameItemcardimage{
+    border-radius: 10px;
+    width: 110px;
+    max-height: 100px;
 }
 
 .gamecatcardtitle{
