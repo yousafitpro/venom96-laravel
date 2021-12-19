@@ -11,7 +11,7 @@
 
           </a><br>
           <label style="color: black; font-size: 13px">{{$price}}</label><br>
-          <label>{{$user}} 444</label>
+          <label>{{$user}}</label>
       </div>
   </div>
 
