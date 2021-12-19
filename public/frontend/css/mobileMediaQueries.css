@@ -26,6 +26,10 @@
         margin-left: 0px;
 
     }
+    .myitemGamecontainer .item{
+        width: 100%;
+
+    }
     /*Slider*/
     .dot {
         height: 5px;

@@ -1,16 +1,18 @@
 
-<div class="item">
-    <div style=" " class="myflex ">
-        <img class="gameItemcardimage" src="{{isset($imageurl)?$imageurl:''}}">
+<div class="item ">
+  <div style="width: 100%; ">
+      <div style=" " class="myflex ">
+          <img class="gameItemcardimage" src="{{isset($imageurl)?$imageurl:''}}">
 
-    </div>
-    <br>
-    <div style="width: 100%; text-align: center">
-        <a href="#">{{isset($title)?$title:''}}
+      </div>
+      <br>
+      <div style="width: 100%; text-align: center">
+          <a href="#">{{isset($title)?$title:''}}
 
-        </a><br>
-        <label style="color: black; font-size: 13px">{{$price}}</label><br>
-        <label>{{$user}}</label>
-    </div>
+          </a><br>
+          <label style="color: black; font-size: 13px">{{$price}}</label><br>
+          <label>{{$user}}</label>
+      </div>
+  </div>
 
 </div>
