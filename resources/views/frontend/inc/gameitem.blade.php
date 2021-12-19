@@ -1,5 +1,5 @@
 
-<div class="item " style="width: 100%">
+<div class="item " >
   <div style="width: 100%; background: red; ">
       <div style=" " class="myflex ">
           <img class="gameItemcardimage" src="{{isset($imageurl)?$imageurl:''}}">
