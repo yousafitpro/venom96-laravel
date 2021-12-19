@@ -10,6 +10,9 @@
 .myitemcontainer{
     height: 200px;
 }
+    .footerRight{
+        float: left;
+    }
 
 
     .myitemcontainer .item {

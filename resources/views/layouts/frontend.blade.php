@@ -14,6 +14,7 @@
 @include('frontend.partials.top-2')
 @include("frontend.partials.siadebar")
 @yield('content')
+@include('frontend.partials.footer')
 
 <link rel="stylesheet" href="{{asset('frontend/css/mobileMediaQueries.css')}}">
 

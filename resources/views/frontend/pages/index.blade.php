@@ -73,23 +73,51 @@
 
             </div>
         </div>
-        <hr>
+
         <label style="font-weight: bold; color: gray; " >New Items</label><br>
+  <div class="row">
+      <div class="col-md-12">
+          <div class="card">
+              <div class="card-body">
+                  <div class="myitemGamecontainer">
+                      @include('frontend.inc.gameitem',['imageurl'=>asset('myimages/gt.png'),'title'=>"mpact 3 fast and cheap Only",'price'=>'US$16.95/500m Alz','user'=>'TopUpMaster'])
+                      @include('frontend.inc.gameitem',['imageurl'=>asset('myimages/gt.png'),'title'=>"mpact 3 fast and cheap Only",'price'=>'US$16.95/500m Alz','user'=>'TopUpMaster'])
+
+                      @include('frontend.inc.gameitem',['imageurl'=>asset('myimages/gt.png'),'title'=>"mpact 3 fast and cheap Only",'price'=>'US$16.95/500m Alz','user'=>'TopUpMaster'])
+                      @include('frontend.inc.gameitem',['imageurl'=>asset('myimages/gt.png'),'title'=>"mpact 3 fast and cheap Only",'price'=>'US$16.95/500m Alz','user'=>'TopUpMaster'])
+                      @include('frontend.inc.gameitem',['imageurl'=>asset('myimages/gt.png'),'title'=>"mpact 3 fast and cheap Only",'price'=>'US$16.95/500m Alz','user'=>'TopUpMaster'])
+
+                      @include('frontend.inc.gameitem',['imageurl'=>asset('myimages/gt.png'),'title'=>"mpact 3 fast and cheap Only",'price'=>'US$16.95/500m Alz','user'=>'TopUpMaster'])
+
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+</div>
+        <br>
+        <label style="font-weight: bold; color: gray; " >Hot Items</label><br>
         <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="myitemGamecontainer">
+                            @include('frontend.inc.gameitem',['imageurl'=>asset('myimages/gt.png'),'title'=>"mpact 3 fast and cheap Only",'price'=>'US$16.95/500m Alz','user'=>'TopUpMaster'])
+                            @include('frontend.inc.gameitem',['imageurl'=>asset('myimages/gt.png'),'title'=>"mpact 3 fast and cheap Only",'price'=>'US$16.95/500m Alz','user'=>'TopUpMaster'])
+
+                            @include('frontend.inc.gameitem',['imageurl'=>asset('myimages/gt.png'),'title'=>"mpact 3 fast and cheap Only",'price'=>'US$16.95/500m Alz','user'=>'TopUpMaster'])
+                            @include('frontend.inc.gameitem',['imageurl'=>asset('myimages/gt.png'),'title'=>"mpact 3 fast and cheap Only",'price'=>'US$16.95/500m Alz','user'=>'TopUpMaster'])
+                            @include('frontend.inc.gameitem',['imageurl'=>asset('myimages/gt.png'),'title'=>"mpact 3 fast and cheap Only",'price'=>'US$16.95/500m Alz','user'=>'TopUpMaster'])
+
+                            @include('frontend.inc.gameitem',['imageurl'=>asset('myimages/gt.png'),'title'=>"mpact 3 fast and cheap Only",'price'=>'US$16.95/500m Alz','user'=>'TopUpMaster'])
 
 
-            <div class="col-md-2">
-                <div style="width: 100%; " class="myflex">
-                    <img class="gamecatcardimage" src="{{asset('myimages/gt.png')}}">
-
-                </div>
-                <div style="width: 100%">
-                    <p style="text-align: center">Pubg 123</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </div>
-
-</div>
 
 @endsection

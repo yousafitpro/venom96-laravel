@@ -32,11 +32,37 @@ body{
     height:50px;
    margin-left:30px;
 }
+.myitemcontainer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    overflow-x: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+}
+
+.myitemcontainer .item {
+    width: 120px;
+    flex-shrink: 0;
+    height:50px;
+    margin-left:30px;
+}
 .myitemcontainer .nextItem{
     width: 120px;
     flex-shrink: 0;
     height:50px;
     margin-left:50px;
+}
+.myitemGamecontainer{
+    width: 100%;
+}
+.myitemGamecontainer .item{
+   float: left;
+    width: 175px;
+
+}
+.footerRight{
+    float: right;
 }
 
 .myitemcontainer::-webkit-scrollbar {
@@ -145,25 +171,22 @@ padding-left: 30px;
 }
 .gamecatcardimage{
     border-radius: 10px;
-    max-height: 120px;
+    max-height: 140px;
     width: 80%;
 
 
 }
 .gameItemcard{
-    background-color: red;
 
-    width: 300px;
-    padding-left: 80px;
-    padding-right: 80px;
-    max-width: 150px;
-    min-width: 150px;
+
+
 
 }
 .gameItemcardimage{
     border-radius: 10px;
-    width: 110px;
-    max-height: 100px;
+    min-width: 120px;
+    max-height: 120px;
+    max-width: 300px;
 }
 
 .gamecatcardtitle{
