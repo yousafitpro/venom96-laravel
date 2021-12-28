@@ -30,7 +30,7 @@
                     <img src="{{$item->image_url}}" style="width: 60px">
                 </td>
                 <td>{{$item->name}}</td>
-                <td>{{$item->category->name}}</td>
+                <td></td>
                 <td>{{$item->price}}</td>
                 <td>{{$item->type}}</td>
                 <td width="50px">
