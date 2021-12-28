@@ -19,6 +19,7 @@ class SliderController extends Controller
 
         $slider->title=$request->title;
         $slider->link=$request->link;
+        $slider->save();
         if($request->hasFile('image'))
         {
             $file = $request->file('image');
