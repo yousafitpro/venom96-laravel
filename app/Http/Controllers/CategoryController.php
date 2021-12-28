@@ -28,6 +28,7 @@ class CategoryController extends Controller
         $category=new category();
         $category->type=$request->type;
         $category->name=$request->name;
+        $category->save();
         if($request->hasFile('image'))
         {
 
