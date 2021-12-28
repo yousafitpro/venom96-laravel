@@ -25,25 +25,7 @@
             <tbody>
 
             @foreach($items as $item)
-            <tr class="center">
-                <td>
-                    <img src="{{$item->image_url}}" style="width: 60px">
-                </td>
-                <td>{{$item->name}}</td>
-                <td></td>
-                <td>{{$item->price}}</td>
-                <td>{{$item->type}}</td>
-                <td width="50px">
-                    <div class="dropdown dropdown-menu-bottom">
-                        <i class="fa fa-cogs" data-toggle="dropdown"></i>
 
-                        <ul class="dropdown-menu">
-                            <li><a href="#" data-toggle="modal" data-target="#deleteModel">Delete</a></li>
-                            <li><a href="{{route('admin.product.getOne',$item->id)}}">Edit/View</a></li>
-                        </ul>
-                    </div>
-                </td>
-            </tr>
 {{--            Delete Moel--}}
             <div class="modal fade" id="deleteModel" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
