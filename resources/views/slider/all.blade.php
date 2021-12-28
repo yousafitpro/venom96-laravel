@@ -70,7 +70,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                           <a href="{{route('admin.category.deleteOne',$item->id)}}"> <button type="button" class="btn btn-primary">Yes</button></a>
+                           <a href="{{route('admin.slider.deleteOne',$item->id)}}"> <button type="button" class="btn btn-primary">Yes</button></a>
                         </div>
                     </div>
                 </div>
