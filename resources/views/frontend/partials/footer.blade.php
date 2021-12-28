@@ -3,7 +3,7 @@
 <br>
 <br>
 
-<div class="container-fluid">
+<div class="container">
     <div class="row">
         <div class="col-md-8">
             <label style="color: darkgrey">© 2021 KALEOZ.com</label><br>

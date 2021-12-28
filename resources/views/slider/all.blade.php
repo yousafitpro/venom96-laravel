@@ -1,13 +1,14 @@
 @extends('layouts.dashboard')
 @section('content')
+    @include('slider.add')
     <div class="card">
         <div class="card-header">
-            <h3>All Products</h3>
+            <h3>All Slides</h3>
         </div>
         <div class="card-body">
             <div class="row">
                 <div class="col-md-12">
-                    <a href="{{route('admin.product.add')}}">  <button class="btn btn-primary float-right"> Add New</button></a>
+                    <a href="#" data-toggle="modal" data-target="#addModel">  <button class="btn btn-primary float-right"> Add New</button></a>
                 </div>
             </div>
             <br>
@@ -15,34 +16,41 @@
         <table class="table  table-bordered table-hover dataTables-example" >
             <thead>
             <tr>
-                <th>Thumbnail</th>
-                <th>name</th>
-
-                <th>Game</th>
-                <th>Price</th>
-                <th>Type</th>
+                <th>Image</th>
+                <th>Title </th>
+                <th>Link</th>
                 <th>Actions</th>
             </tr>
             </thead>
             <tbody>
 
             @foreach($items as $item)
+                @include('slider.update')
             <tr class="center">
                 <td>
                     <img src="{{$item->image_url}}" style="width: 60px">
                 </td>
-                <td>{{$item->name}}</td>
+                <td>{{$item->title}}
 
-                <td>{{$item->category->name}}</td>
-                <td>{{$item->price}}</td>
-                <td>{{$item->type}}</td>
+
+                    @if($item->is_active=="1")
+                        <small><p style="color: green; float: right; font-weight: bold">(Active)</p></small>
+                        @endif
+                </td>
+                <td><a href="{{$item->link}}" target="_blank">Open Me</a></td>
                 <td width="50px">
                     <div class="dropdown dropdown-menu-bottom">
                         <i class="fa fa-cogs" data-toggle="dropdown"></i>
 
                         <ul class="dropdown-menu">
                             <li><a href="#" data-toggle="modal" data-target="#deleteModel">Delete</a></li>
-                            <li><a href="{{route('admin.product.getOne',$item->id)}}">Edit/View</a></li>
+                            @if($item->is_active=="0")
+                            <li><a href="{{route('admin.slider.active',$item->id)}}"  >active</a></li>
+                            @endif
+                            @if($item->is_active=="1")
+                            <li><a href="{{route('admin.slider.unactive',$item->id)}}"  >Unactive</a></li>
+                            @endif
+                            <li><a href="#" data-toggle="modal" data-target="#updateModel{{$item->id}}" >Edit/View</a></li>
                         </ul>
                     </div>
                 </td>
@@ -62,7 +70,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                           <a href="{{route('admin.product.deleteOne',$item->id)}}"> <button type="button" class="btn btn-primary">Yes</button></a>
+                           <a href="{{route('admin.category.deleteOne',$item->id)}}"> <button type="button" class="btn btn-primary">Yes</button></a>
                         </div>
                     </div>
                 </div>
@@ -71,12 +79,9 @@
             </tbody>
             <tfoot>
             <tr>
-                <th>Thumbnail</th>
-                <th>name</th>
-
-                <th>Game</th>
-                <th>Price</th>
-                <th>Type</th>
+                <th>Image</th>
+                <th>Title</th>
+                <th>Link</th>
                 <th>Actions</th>
             </tr>
             </tfoot>

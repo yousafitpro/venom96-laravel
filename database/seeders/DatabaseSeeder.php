@@ -6,6 +6,7 @@ use App\Models\gateway;
 use App\Models\role;
 use App\Models\state;
 use App\Models\User;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -36,19 +37,15 @@ class DatabaseSeeder extends Seeder
 
 
 
-        $gw=new gateway();
-        $gw->title="Paypal";
-        $gw->email="temp@gmail.com";
-        $gw->status="1";
-        $gw->save();
+
 
         $gw=new gateway();
-        $gw->title="Stripe";
-        $gw->public_key="key-43dfg3432dfg345fd4545gdfg45";
-        $gw->private_key="key-sfsd234234dfssdf34435";
-        $gw->status="1";
+        $gw->title="Probhu";
+        $gw->returnurl=url('')."/api/gateway/ProbhuReturnURL";
         $gw->save();
-
+        $gw=new gateway();
+        $gw->returnurl=url('')."/api/gateway/YoappReturnURL";
+        $gw->save();
 
 
     }

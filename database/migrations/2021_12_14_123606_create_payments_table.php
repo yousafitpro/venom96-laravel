@@ -16,6 +16,12 @@ class CreatePaymentsTable extends Migration
         Schema::dropIfExists('payments');
         Schema::create('payments', function (Blueprint $table) {
             $table->id();
+            $table->string('amount')->default('0');
+            $table->string('merchanttxnid')->default('N/A');
+            $table->string('gatewaytxnid')->default('N/A');
+            $table->string('txndate')->default(\Carbon\Carbon::now());
+            $table->string('status')->default('pending');
+
             $table->timestamps();
         });
     }

@@ -3,7 +3,7 @@
     @include('category.add')
     <div class="card">
         <div class="card-header">
-            <h3>All Categories</h3>
+            <h3>All Games</h3>
         </div>
         <div class="card-body">
             <div class="row">
@@ -16,7 +16,9 @@
         <table class="table  table-bordered table-hover dataTables-example" >
             <thead>
             <tr>
+                <th>Thumbnail</th>
                 <th>Name</th>
+                <th>Category</th>
                 <th>Products</th>
                 <th>Actions</th>
             </tr>
@@ -26,7 +28,15 @@
             @foreach($items as $item)
                 @include('category.update')
             <tr class="center">
-                <td>{{$item->name}}</td>
+                <td>
+                    <img src="{{$item->image_url}}" style="width: 60px">
+                </td>
+                <td>{{$item->name}}
+                    @if($item->is_new=="1")
+                        <small><p style="color: green; float: right; font-weight: bold">(New)</p></small>
+                    @endif
+                </td>
+                <td>{{$item->type}}</td>
                 <td>{{$item->product_count}}</td>
                 <td width="50px">
                     <div class="dropdown dropdown-menu-bottom">
@@ -34,6 +44,12 @@
 
                         <ul class="dropdown-menu">
                             <li><a href="#" data-toggle="modal" data-target="#deleteModel">Delete</a></li>
+                            @if($item->is_new=="0")
+                            <li><a href="{{route('admin.category.set_as_new',$item->id)}}" >set as New</a></li>
+                            @endif
+                            @if($item->is_new=="1")
+                            <li><a href="{{route('admin.category.set_as_old',$item->id)}}" >set as Old</a></li>
+                            @endif
                             <li><a href="#" data-toggle="modal" data-target="#updateModel{{$item->id}}" >Edit/View</a></li>
                         </ul>
                     </div>
@@ -63,7 +79,9 @@
             </tbody>
             <tfoot>
             <tr>
+                <th>Thumbnail</th>
                 <th>Name</th>
+                <th>Category</th>
                 <th>Products</th>
                 <th>Actions</th>
             </tr>

@@ -70,11 +70,12 @@
                                </select>
                            </div>
                        </div>
+
                        <br>
                        <div class="row">
                            <div class="col-md-2">
                                <label >
-                                 Category
+                               Game
                                </label>
                                <br>
                            </div>

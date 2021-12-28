@@ -2,32 +2,23 @@
 <link rel="stylesheet" href="{{asset('movie-slider/style.css')}}">
 <div >
     <div class="slideshow-container">
-
+@foreach(active_slides() as $slide)
         <div class="mySlides ">
-            <div class="numbertext">1 / 3</div>
-            <img class="slideimage" src="{{asset('myimages/sliderimg.png')}}" style="width:100%">
-            <div class="text">Caption Text</div>
+{{--            <div class="numbertext">1 / 3</div>--}}
+            <img class="slideimage" src="{{$slide->image_url}}" style="width:100%">
+{{--            <div class="text">{{$slide->title}}</div>--}}
         </div>
+        @endforeach
 
-        <div class="mySlides ">
-            <div class="numbertext">2 / 3</div>
-            <img class="slideimage" src="{{asset('myimages/sliderimg2.png')}}" style="width:100%">
-            <div class="text">Caption Two</div>
-        </div>
 
-        <div class="mySlides ">
-            <div class="numbertext">3 / 3</div>
-            <img class="slideimage" src="{{asset('myimages/sliderimg3.png')}}" style="width:100%">
-            <div class="text">Caption Three</div>
-        </div>
 
     </div>
 
 
     <div style="text-align:center">
+        @foreach(active_slides() as $slide)
         <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+        @endforeach
     </div>
 
 

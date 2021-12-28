@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCategoriesTable extends Migration
+class CreateSlidersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,13 @@ class CreateCategoriesTable extends Migration
      */
     public function up()
     {
-        Schema::dropIfExists('categories');
-        Schema::create('categories', function (Blueprint $table) {
+        Schema::create('sliders', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('user_id');
-            $table->string("name");
-            $table->string("type");
-            $table->string("is_new",)->default('0');
-            $table->string("thumbnail")->default('');
-
+            $table->string("title");
+            $table->string("image")->default('');
+            $table->string("link")->default('');
+            $table->string("is_active")->default('0');
             $table->string("is_deleted")->default('0');
             $table->timestamps();
         });
@@ -34,6 +32,6 @@ class CreateCategoriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('categories');
+        Schema::dropIfExists('sliders');
     }
 }

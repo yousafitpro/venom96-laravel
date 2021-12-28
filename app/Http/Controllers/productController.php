@@ -32,6 +32,7 @@ class productController extends Controller
         $product->type=$request->type;
         $product->status=$request->status;
         $product->price=$request->price;
+
         $product->category_id=$request->category;
         $product->secret_info=$request->secretdata;
         $product->short_info=$request->shortdata;
@@ -76,6 +77,7 @@ class productController extends Controller
         $product->type=$request->type;
         $product->price=$request->price;
         $product->category_id=$request->category;
+
         $product->secret_info=$request->secretdata;
         $product->short_info=$request->shortdata;
         $product->status=$request->status;

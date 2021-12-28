@@ -1,7 +1,7 @@
 <div class="{{isset($next)?$next:'item'}}" style="{{isset($styles)?$styles:''}}" >
     <div   class="gameCard" style="{{isset($isfirst)?'margin-left:0px':''}}"  >
         <div>
-            <img class="gamecatcardimage" style=" width: 100%;  " src="{{$imageurl}}">
+            <img class="gamecatcardimage" style=" width: 100%; {{isset($isfirst)?'height:100px':''}}  " src="{{$imageurl}}">
         </div>
         <br>
         <div style="text-align: center">

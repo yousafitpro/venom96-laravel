@@ -1,10 +1,10 @@
 
 <div class="modal fade" id="addModel" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog  modal-md" role="document">
-        <form action="{{route('admin.category.add')}}" method="post" enctype="multipart/form-data">
+        <form action="{{route('admin.slider.add')}}" method="post" enctype="multipart/form-data">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Add Game</h5>
+                <h5 class="modal-title" id="exampleModalLongTitle">Add Slide</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -17,33 +17,37 @@
 
                                 @csrf
                                 <label >
-                                    Name
+                                   Title
                                 </label>
 
                                 <br>
 
-                                <input name="name" class="form-control" required >
+                                <input name="title" required class="form-control"  >
 
 
 
                         </div>
 
                     </div>
+
                     <br>
                     <div class="row">
 
                         <div class="col-md-10 offset-1">
+
+                            @csrf
                             <label >
-                                Category
+                             Link
                             </label>
+
                             <br>
-                            <select class="form-control" name="type" required>
 
-                                <option value="Mobile Game">Mobile Game</option>
-                                <option value="PC Game">PC Game</option>
+                            <input name="link" required class="form-control"  >
 
-                            </select>
+
+
                         </div>
+
                     </div>
                     <br>
                     <div class="row">
@@ -62,6 +66,7 @@
                 <a > <button type="submit" class="btn btn-primary">Add </button></a>
             </div>
         </div>
+
         </form>
     </div>
 </div>

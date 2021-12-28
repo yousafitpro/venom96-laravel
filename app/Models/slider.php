@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
 
-class category extends Model
+class slider extends Model
 {
     use HasFactory;
     public function __construct()
@@ -17,18 +17,10 @@ class category extends Model
         }
 
     }
-    protected $appends = array('ProductCount' => '','ImageURL' => '');
+    protected $appends = array('ImageURL' => '');
     public function getImageUrlAttribute()
     {
 
-        return asset(category::find($this->id)->thumbnail);
+        return asset(slider::find($this->id)->image);
     }
-    public function getProductCountAttribute()
-    {
-
-        return product::where('category_id',$this->id)->get()->count();
-    }
-
-
-
 }

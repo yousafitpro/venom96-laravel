@@ -1,109 +1,56 @@
-Login
-Post
-https://sneakcrm.com/mjfleb-car-system-laravel/api/auth/login?email=admin@gmail.com&password=12
 
-
-register
-Post
-https://sneakcrm.com/mjfleb-car-system-laravel/api/auth/register?email=17581556-010@uog.edu.pk&password=12&first_name=Yousaf&last_name=ali
-
-send bid
-Post
-https://sneakcrm.com/mjfleb-car-system-laravel/api/bid?token={{token}}
-
-body type :json
-body
-{
-"instant_offer_id": "w31412n12v",
-"request_id": 523,
-"api_version": "v1",
-"vehicle": {
-"year": 2011,
-"make": "chevrolet",
-"model": "malibu",
-"trim": "2lt",
-"vin": "1G11H5SA9DF280092",
-"body_type": "sedan",
-"door_count": 4,
-"fuel_type": "gas",
-"body_style": "car",
-"adjusted_curb_weight": 3532,
-"color": "black",
-"usage": "common",
-"squish_vin": "1G11H5SADF",
-"category": "scrap",
-"weight_category": "light_duty",
-"location": {
-"zip_code": "78705",
-"city": "austin",
-"county": "travis",
-"state_code": "tx"
-},
-"condition": {
-"all_tires_inflated": "no",
-"flat_tires_location": {
-"driver_front": false,
-"passenger_front": false,
-"driver_rear": false,
-"passenger_rear": false
-},
-"wheels_removed": "yes",
-"wheels_removed_location": {
-"driver_front": true,
-"passenger_front": false,
-"driver_rear": false,
-"passenger_rear": false
-},
-"drivetrain_condition": "drives",
-"engine_transmission_condition": "intact",
-"body_damage_free": "yes",
-"body_damage_location": {
-"driver_front": false,
-"passenger_front": false,
-"driver_rear": false,
-"passenger_rear": false
-},
-"body_panels_intact": "yes",
-"body_panels_damage_location": {
-"driver_front": false,
-"passenger_front": false,
-"driver_rear": false,
-"passenger_rear": false
-},
-"mirrors_lights_glass_intact": "yes",
-"mirrors_lights_glass_damage_location": {
-"driver_front": false,
-"passenger_front": false,
-"driver_rear": false,
-"passenger_rear": false
-},
-"interior_intact": "yes",
-"flood_fire_damage_free": "yes",
-"mileage": 15000
-},
-"ownership": {
-"title_type": "clean"
-}
-}
-
-    }
+Test API Credentials
 
 
 
-Get
-track bid
-https://sneakcrm.com/mjfleb-car-system-laravel/api/track/{{bidid}}?token={{token}}
+    API Username : GTESTAPI
+
+           Password  : G@apitest12
+
+      Merchant ID : 0000017484
+
+Merchant Name: Gaming.com
+
+   API Secret Key: Gsk@api#test12
+
+       API URL       : https://merchantapiuat.yoapp.com.np
 
 
-https://service.blackbookcloud.com/UsedCarWS/UsedCarWS/UsedVehicle/VIN/1G11H5SA9DF280092?mileage=15000&state=tx&template=11&customerid=test
 
 
-https://developer.blackbookcloud.com/
-User: CargeekAPI
-pword: vn@4dUXj
 
-cargeek1_peddlebiddingalgo
+Reporting panel credentials
 
-Bluehost.com
-username: cargeek.com
-dV@Hy7/cSBN7jV/
+
+
+Username : GAMING
+
+Password  : G@mingtest12
+
+      URL      : https://merchantuat.yoapp.com.np/
+
+
+
+
+
+
+
+
+
+TEST API Credential
+
+Base URL: https://stagesys.prabhupay.com
+
+username: GCPLTEST
+
+password: g@c#12#
+
+
+
+Reporting Panel Credential
+
+URL: https://stagegateway.prabhupay.com
+
+username: GCPLTEST12
+
+password: jhqe14cv

@@ -48,7 +48,8 @@ include('webIncludes/orders.php');
 include('webIncludes/payments.php');
 // gateway
 include('webIncludes/gateways.php');
-
+// slider
+include('webIncludes/slider.php');
 
 
 

@@ -49,11 +49,14 @@
                         <li><a href="{{route('admin.product.add')}}">Add New</a></li>
 
                         <li><a href="{{route('admin.product.getAll')}}">All Products</a></li>
-                        <li><a href="{{route('admin.category.getAll')}}">Categories</a></li>
+                        <li><a href="{{route('admin.category.getAll')}}">Games</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="{{route('admin.order.getAll')}}"><i class="fa fa-shopping-cart"></i> <span class="nav-label">Orders</span></a>
+                </li>
+                <li>
+                    <a href="{{route('admin.slider.getAll')}}"><i class="fa fa-credit-card-alt"></i> <span class="nav-label">Slides</span></a>
                 </li>
                 <li>
                     <a href="{{route('admin.payment.getAll')}}"><i class="fa fa-credit-card-alt"></i> <span class="nav-label">Payments</span></a>

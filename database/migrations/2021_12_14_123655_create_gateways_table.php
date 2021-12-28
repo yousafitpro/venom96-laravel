@@ -20,6 +20,13 @@ class CreateGatewaysTable extends Migration
             $table->string("private_key")->nullable()->default('N/A');
             $table->string("public_key")->nullable()->default('N/A');
             $table->string("email")->nullable()->default('N/A');
+            $table->string("merchantId")->nullable()->default('N/A');
+            $table->string("returnUrl")->nullable()->default('N/A');
+            $table->string("merchantname")->nullable()->default('N/A');
+            $table->string("merchantusername")->nullable()->default('N/A');
+            $table->string("merchantApiusername")->nullable()->default('N/A');
+            $table->string("signature")->nullable()->default('N/A');
+            $table->string("password")->nullable()->default('N/A');
             $table->string("status")->nullable()->default('0');
             $table->timestamps();
         });
