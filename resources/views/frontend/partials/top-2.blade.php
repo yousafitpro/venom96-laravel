@@ -17,10 +17,10 @@
         <div style="width: 10%;  float: left;" class="myflex top2-signuplogin">
             <img  src="{{asset('myimages/userplus.png')}}">
              <span style="color:gray; font-weight:bold; text-align: right">
-                 <a  href="/login" class=" " style="float: right; color: gray">Login/</a>
+                 <a  href="https://sneakcrm.com/venom96-laravel/login" class=" " style="float: right; color: gray">Login/</a>
 </span>
             <span style="color:gray; font-weight:bold; text-align: right">
-                 <a  href="register" class=" " style="float: right; color: gray">Signup</a>
+                 <a  href="https://sneakcrm.com/venom96-laravel/register" class=" " style="float: right; color: gray">Signup</a>
              </span>
         </div>
     </div>
