@@ -71,7 +71,7 @@
 
              <div class="myitemcontainer" >
                  @if($newgames->count()>0)
-                 @include('frontend.inc.game',['imageurl'=>$newgames[0]->image_url,'title'=>$pcgames[0]->name,'next'=>'nextItem','styles'=>'margin-left:10px;'])
+                 @include('frontend.inc.game',['imageurl'=>$newgames[0]->image_url,'title'=>$newgames[0]->name,'next'=>'nextItem','styles'=>'margin-left:10px;'])
                 @endif
                 @foreach($newgames as $ng)
                      @if($loop->index>0)
