@@ -16,7 +16,12 @@
         </div>
         <div style="width: 10%;  float: left;" class="myflex top2-signuplogin">
             <img  src="{{asset('myimages/userplus.png')}}">
-            <a  href="#about" class=" " style="float: right"> <span style="color:gray; font-weight:bold; text-align: right">Login/Signup</span></a>
+             <span style="color:gray; font-weight:bold; text-align: right">
+                 <a  href="/login" class=" " style="float: right; color: gray">Login/</a>
+</span>
+            <span style="color:gray; font-weight:bold; text-align: right">
+                 <a  href="register" class=" " style="float: right; color: gray">Signup</a>
+             </span>
         </div>
     </div>
 
