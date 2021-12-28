@@ -32,7 +32,7 @@
                 @endif
                @foreach($mbgames as $mg)
                  @if($loop->index>0)
-                 @include('frontend.inc.game',['imageurl'=>$mg->image_url,'title'=>$mbgames[0]->name])
+                 @include('frontend.inc.game',['imageurl'=>$mg->image_url,'title'=>$mg->name])
                      @endif
                  @endforeach
 
@@ -56,7 +56,7 @@
                  @endif
                  @foreach($pcgames as $pg)
                      @if($loop->index>0)
-                         @include('frontend.inc.game',['imageurl'=>$pg->image_url,'title'=>$pcgames[0]->name])
+                         @include('frontend.inc.game',['imageurl'=>$pg->image_url,'title'=>$pg->name])
                      @endif
                  @endforeach
              </div>
