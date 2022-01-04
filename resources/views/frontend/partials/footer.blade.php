@@ -1,7 +1,7 @@
 
 
 
-<div class="container" >
+<div class="container" style="padding: 10px" >
     <br>
     <br>
     <br>
