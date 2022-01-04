@@ -25,6 +25,15 @@ class GatewayController extends Controller
         $g->save();
         return redirect()->back();
     }
+    public function updateKhalti(Request $request)
+    {
+        $g=gateway::where('id','3')->first();
+        $g->public_key=$request->public_key;
+        $g->status=$request->status;
+        $g->save();
+        return redirect()->back();
+
+    }
     public function updateprobhu(Request $request)
     {
         $g=gateway::where('id','1')->first();
@@ -34,6 +43,10 @@ class GatewayController extends Controller
         $g->status=$request->status;
         $g->save();
         return redirect()->back();
+    }
+    public function KhaltiReturnURL(Request $request)
+    {
+
     }
     public function ProbhuReturnURL(Request $request)
     {

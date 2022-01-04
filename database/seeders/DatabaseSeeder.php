@@ -40,11 +40,16 @@ class DatabaseSeeder extends Seeder
 
 
         $gw=new gateway();
-        $gw->title="Probhu";
+        $gw->title="Probhu Payment Gateway";
         $gw->returnurl=url('')."/api/gateway/ProbhuReturnURL";
         $gw->save();
         $gw=new gateway();
+        $gw->title="YoApp Payment Gateway";
         $gw->returnurl=url('')."/api/gateway/YoappReturnURL";
+        $gw->save();
+        $gw=new gateway();
+        $gw->title="Khalti Payment Gateway";
+        $gw->returnurl=url('')."/api/gateway/KhaltiReturnURL";
         $gw->save();
 
 

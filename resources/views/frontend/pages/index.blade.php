@@ -1,7 +1,7 @@
 @extends('layouts.frontend')
 @section('content')
 
-    <div class="container-fluid">
+    <div class="container-fluid" style="margin: 0px; padding: 0px; width: 100%; overflow: hidden">
     <br>
     <div class="row">
         <div class="col-md-12">
@@ -17,7 +17,7 @@
 
              <div class="myitemcontainer" >
                  <div class="hideOnMob">
-                     @include('frontend.inc.game',['imageurl'=>asset('myimages/mbgames.png'),'title'=>'Popular Mobile Games','isfirst'=>true])
+                     @include('frontend.inc.game',['imageurl'=>asset('myimages/mbgames.png'),'title'=>'Popular Mobile Games','isfirst'=>true,'id'=>'21s'])
 
                  </div>
                <?php
@@ -28,11 +28,11 @@
 
                  ?>
                  @if($mbgames->count()>0)
-                 @include('frontend.inc.game',['imageurl'=>$mbgames[0]->image_url,'title'=>$mbgames[0]->name,'next'=>'nextItem'])
+                 @include('frontend.inc.game',['imageurl'=>$mbgames[0]->image_url,'title'=>$mbgames[0]->name,'next'=>'nextItem','id'=>$mbgames[0]->id])
                 @endif
                @foreach($mbgames as $mg)
                  @if($loop->index>0)
-                 @include('frontend.inc.game',['imageurl'=>$mg->image_url,'title'=>$mg->name])
+                 @include('frontend.inc.game',['imageurl'=>$mg->image_url,'title'=>$mg->name,'id'=>$mg->id])
                      @endif
                  @endforeach
 
@@ -48,15 +48,15 @@
 
              <div class="myitemcontainer" >
                  <div class="hideOnMob">
-                     @include('frontend.inc.game',['imageurl'=>asset('myimages/pcgames.png'),'title'=>'Popular PC Games','isfirst'=>true])
+                     @include('frontend.inc.game',['imageurl'=>asset('myimages/pcgames.png'),'title'=>'Popular PC Games','isfirst'=>true,'id'=>$mg->id])
 
                  </div>
                  @if($pcgames->count()>0)
-                 @include('frontend.inc.game',['imageurl'=>$pcgames[0]->image_url,'title'=>$pcgames[0]->name,'next'=>'nextItem'])
+                 @include('frontend.inc.game',['imageurl'=>$pcgames[0]->image_url,'title'=>$pcgames[0]->name,'next'=>'nextItem','id'=>$mg->id])
                  @endif
                  @foreach($pcgames as $pg)
                      @if($loop->index>0)
-                         @include('frontend.inc.game',['imageurl'=>$pg->image_url,'title'=>$pg->name])
+                         @include('frontend.inc.game',['imageurl'=>$pg->image_url,'title'=>$pg->name,'id'=>$pg->id])
                      @endif
                  @endforeach
              </div>
@@ -71,11 +71,11 @@
 
              <div class="myitemcontainer" >
                  @if($newgames->count()>0)
-                 @include('frontend.inc.game',['imageurl'=>$newgames[0]->image_url,'title'=>$newgames[0]->name,'next'=>'nextItem','styles'=>'margin-left:10px;'])
+                 @include('frontend.inc.game',['imageurl'=>$newgames[0]->image_url,'title'=>$newgames[0]->name,'next'=>'nextItem','styles'=>'margin-left:10px;','id'=>$mg->id])
                 @endif
                 @foreach($newgames as $ng)
                      @if($loop->index>0)
-                 @include('frontend.inc.game',['imageurl'=>$ng->image_url,'title'=>$ng->name])
+                 @include('frontend.inc.game',['imageurl'=>$ng->image_url,'title'=>$ng->name,'id'=>$ng->id])
                       @endif
                  @endforeach
              </div>

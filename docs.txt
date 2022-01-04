@@ -54,3 +54,25 @@ URL: https://stagegateway.prabhupay.com
 username: GCPLTEST12
 
 password: jhqe14cv
+
+
+
+
+
+
+https://khalti.com/merchant/
+
+mahendrajungthapa@gmail.com
+
+@WWE2k19
+
+
+Manage api keys
+Live secret key
+live_secret_key_f1262cfa386546e1ae27773c1f1e93cd
+Live public key
+live_public_key_1559e26eb6434ca8befe067f0b619f4c
+Test secret key
+test_secret_key_def43819929b4664904f3569bdb4808b
+Test public key
+test_public_key_e3317aaee6154dd8b9d2df0b70725dc3

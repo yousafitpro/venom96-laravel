@@ -88,4 +88,33 @@
         width: 100px;
         display:block;
     }
+    .lscontainer .outerInner{
+        box-shadow:none;
+        border-radius: 0px
+    }
+    .loginLeftImage
+    {
+        background: url("../../images/lgoin-left-full.PNG");
+        border-radius: 0px;
+    }
+    .loginRight{
+        padding-top: 1vh;
+    }
+    .lscontainer
+    {
+        padding-left: 0%;
+        padding-right: 0%;
+        margin-top: 5vh;
+        background-color: white;
+
+    }
+    .cateTopBox .boxImage
+    {
+
+        margin-left: 10px;
+    }
+    .cateTopBox .catename
+    {
+        font-size: 20px;
+    }
 }

@@ -2,6 +2,7 @@
 //kernel
 namespace App\Http;
 
+use App\Http\Controllers\TestCon;
 use Illuminate\Console\Command;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
@@ -33,8 +34,9 @@ class Kernel extends HttpKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('demo:cron')
-            ->everyMinute();
+        $schedule->call(function () {
+         TestCon::AddEntry();
+        })->everyMinute();
     }
     protected $middlewareGroups = [
         'web' => [

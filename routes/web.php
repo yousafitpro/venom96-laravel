@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\TestCon;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,7 +19,11 @@ use Illuminate\Support\Facades\Route;
 //    return view('auth.login');
 //});
 Route::get('/test', function () {
-    return view('auth.passwords.confirm');
+    TestCon::AddEntry();
+    $d1 = Carbon::parse('2021-08-17 10:18:42');
+    $d2 = Carbon::parse('2021-09-17 10:18:43');
+
+    dd($d2->diffInMinutes($d1));
 });
 Auth::routes();
 

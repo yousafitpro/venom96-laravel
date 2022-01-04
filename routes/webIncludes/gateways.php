@@ -7,5 +7,6 @@ Route::prefix('gateway')
         Route::post('updateStripe', [App\Http\Controllers\GatewayController::class, 'updateStripe'])->name('gateway.updatestripe');
         Route::post('updateprobhu', [App\Http\Controllers\GatewayController::class, 'updateprobhu'])->name('gateway.updateprobhu');
         Route::post('updateyoapp', [App\Http\Controllers\GatewayController::class, 'updateyoapp'])->name('gateway.updateyoapp');
+        Route::post('updateKhalti', [App\Http\Controllers\GatewayController::class, 'updateKhalti'])->name('gateway.updateKhalti');
 //        Route::post('updateyouapp', [App\Http\Controllers\GatewayController::class, 'updateyouapp'])->name('gateway.updateyouapp');
     });

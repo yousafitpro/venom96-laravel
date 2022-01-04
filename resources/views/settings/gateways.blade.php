@@ -90,6 +90,40 @@
                 </div>
             </div>
             <br>
+            <div class="card">
+                <div class="card-body">
+                    <h3>2-{{$gateways[2]->title}}</h3><br>
+                    <form action="{{route('gateway.updateKhalti')}}" method="post">
+                        @csrf
+                        <label>Public Key</label>
+                        <br>
+                        <input name="public_key" required value="{{$gateways[2]->public_key}}" placeholder="" class="form-control">
+
+                        <br>
+
+
+                        <label>Return URL</label>
+                        <br>
+                        <input name="returnurl" required readonly value="{{$gateways[2]->returnUrl}}" placeholder="" class="form-control">
+
+                        <label>Active:</label>
+                        <select class="form-control" name="status">
+                            @if($gateways[1]->status=='0')
+                                <option value="0">No</option>
+                            @endif
+                            @if($gateways[1]->status=='1')
+                                <option value="1">Yes</option>
+                            @endif
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                        <br>
+                        <a href="#" style="cursor: pointer">   <button type="submit" class="btn btn-primary form-control">Save Changes</button></a>
+                    </form>
+
+                </div>
+            </div>
+            <br>
         </div>
     </div>
 </div>
