@@ -52,7 +52,7 @@
 
                  </div>
                  @if($pcgames->count()>0)
-                 @include('frontend.inc.game',['imageurl'=>$pcgames[0]->image_url,'title'=>$pcgames[0]->name,'next'=>'nextItem','id'=>$mg->id])
+                 @include('frontend.inc.game',['imageurl'=>$pcgames[0]->image_url,'title'=>$pcgames[0]->name,'next'=>'nextItem','id'=>$pcgames[0]->id])
                  @endif
                  @foreach($pcgames as $pg)
                      @if($loop->index>0)
@@ -71,7 +71,7 @@
 
              <div class="myitemcontainer" >
                  @if($newgames->count()>0)
-                 @include('frontend.inc.game',['imageurl'=>$newgames[0]->image_url,'title'=>$newgames[0]->name,'next'=>'nextItem','styles'=>'margin-left:10px;','id'=>$mg->id])
+                 @include('frontend.inc.game',['imageurl'=>$newgames[0]->image_url,'title'=>$newgames[0]->name,'next'=>'nextItem','styles'=>'margin-left:10px;','id'=>$newgames[0]->id])
                 @endif
                 @foreach($newgames as $ng)
                      @if($loop->index>0)
