@@ -4,7 +4,7 @@
 
     <div class="row">
         <div class="col-md-12">
-       <div   class="cateTopBox" style="position: relative ;background-color: red; height: 250px;  ">
+       <div   class="cateTopBox" style="position: relative ; height: 250px;  ">
            <div class="cateback" style="width: 100%; height: 100%; position:absolute;">
 
            </div>
