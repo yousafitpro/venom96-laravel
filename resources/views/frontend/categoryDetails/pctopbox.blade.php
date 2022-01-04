@@ -12,7 +12,7 @@
                <div class="row">
                    <div class="col-sm-3">
 
-{{--                       <img class="boxImage"  src="{{$item->imageUrl}}">--}}
+                       <img class="boxImage"  src="{{$item->imageUrl}}">
                    </div>
                    <div class="col-sm-6">
                        <h3 class="catename">{{$item->name}}</h3><br>
