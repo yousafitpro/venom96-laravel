@@ -16,14 +16,12 @@
         </div>
         <div style="width: 10%;  float: left;" class="myflex top2-signuplogin">
             <img  src="{{asset('myimages/userplus.png')}}">
-            <?php
-            $baseUrl="http://localhost/venom96-laravel/";
-            ?>
+
              <span style="color:gray; font-weight:bold; text-align: right">
-                 <a  href="{{$baseUrl}}login" class=" " style="float: right; color: gray">Login/</a>
+                 <a  href="/login" class=" " style="float: right; color: gray">Login/</a>
 </span>
             <span style="color:gray; font-weight:bold; text-align: right">
-                 <a  href="{{$baseUrl}}register" class=" " style="float: right; color: gray">Signup</a>
+                 <a  href="/register" class=" " style="float: right; color: gray">Signup</a>
              </span>
         </div>
     </div>
