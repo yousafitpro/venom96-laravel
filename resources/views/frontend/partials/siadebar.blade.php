@@ -1,5 +1,5 @@
 <div  class="mysidebar card">
-    <div class="container-fluid">
+    <div class="container-fluid" style="padding: 10px">
         <div class="row" style="padding-top: 10px">
             <div class="col" >
                 <img style="width: 110px; height: 40px"   src="{{asset('myimages/topbarlogo.png')}}">
