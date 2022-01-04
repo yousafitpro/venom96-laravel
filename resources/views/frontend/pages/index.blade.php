@@ -48,7 +48,7 @@
 
              <div class="myitemcontainer" >
                  <div class="hideOnMob">
-                     @include('frontend.inc.game',['imageurl'=>asset('myimages/pcgames.png'),'title'=>'Popular PC Games','isfirst'=>true,'id'=>$mg->id])
+                     @include('frontend.inc.game',['imageurl'=>asset('myimages/pcgames.png'),'title'=>'Popular PC Games','isfirst'=>true,'id'=>'b12'])
 
                  </div>
                  @if($pcgames->count()>0)
