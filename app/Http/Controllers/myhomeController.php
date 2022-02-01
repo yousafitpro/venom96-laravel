@@ -16,4 +16,8 @@ class myhomeController extends Controller
     {
         return view('frontend.pages.index');
     }
+    public function productDetails($id)
+    {
+        return view('frontend.pages.product');
+    }
 }
