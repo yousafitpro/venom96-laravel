@@ -1,6 +1,4 @@
 
-
-
 .container{
     padding: 0;
     margin: 0;
@@ -19,9 +17,6 @@
     text-decoration: none;
     color: #7A7A7A !important;
     font-weight: bold;
-}
-.breadcrumb-item a:hover{
-    border-bottom: 1px solid #7A7A7A;
 }
 .product_img img {
     z-index: 1;
@@ -321,136 +316,6 @@ input:disabled{
 .buy_btn button{
     padding: 5px 100px;
 }
-.purchase2 {
-    border-top: 1px rgba(0,0,0,.1) solid;
-    border-radius: 30px;
-    padding-left: 40px;
-    /* border-radius: 30px 30px 0px 0px; */
-}
-.purchase2 ul {
-    display: table;
-    border-collapse: collapse;
-    width: 100%;
-    margin: 2em 0;
-}
-.purchase2 li {
-    display: table-row;
-    list-style: none;
-}
-.purchase2 .form-style-2 {
-    padding: 0;
-}
-.purchase2 .label {
-    width: 38%;
-    padding-bottom: 0px;
-    font-weight: 600px;
-    font-size: small;
-}
-.purchase2 .total {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #fff;
-    border: none;
-    border-top: 1px rgba(0,0,0,.1) solid;
-    border-radius: 0.25em;
-}
-.purchase2 .total .counter .total_price {
-    font-size: 12px;
-}
-.purchase2 .total .counter .currency {
-    font-size: 12px;
-}
-.purchase2 .cart_btn button{
-    font-size: 12px;
-}
-.purchase2 .cart_btn{
-    padding-top: 10px;
-}
-.purchase2 .cart_btn .fa{
-    font-weight: bold;
-    font-size: 15px;
-    padding-right: 10px;
-}
-.purchase2 .cart_btn .btn{
-    font-size: 12px;
-    text-transform: uppercase;
-}
-.purchase2 .select-field{
-    padding: 4px;
-}
-.purchase2 .form-style-2 input.input-field{
-    padding: 4px;
-}
-.purchase2 .form-style-2{
-	padding: 20px 12px 10px 20px;
-	font: 13px Arial, Helvetica, sans-serif;
-}
-.purchase2 .form-style-2 label{
-	display: block;
-	margin: 0px 0px 15px 0px;
-}
-.purchase2 .form-style-2 label > span{
-	width: 100px;
-	font-weight: bold;
-	float: left;
-	padding-top: 8px;
-	padding-right: 5px;
-}
-.purchase2 .form-style-2 span.required{
-	color:red;
-}
-.purchase2 .form-style-2 .tel-number-field{
-	width: 40px;
-	text-align: center;
-}
-.purchase2 .form-style-2 input.input-field, .form-style-2 .select-field{
-	width: 100%;	
-}
-.purchase2 .form-style-2 input.input-field, 
-.purchase2.form-style-2 .tel-number-field, 
-.purchase2 .form-style-2 .textarea-field, 
-.purchase2 .form-style-2 .select-field{
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	border: 1px solid #C2C2C2;
-	box-shadow: 1px 1px 4px #EBEBEB;
-	-moz-box-shadow: 1px 1px 4px #EBEBEB;
-	-webkit-box-shadow: 1px 1px 4px #EBEBEB;
-	border-radius: 3px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	padding: 7px;
-	outline: none;
-}
-.purchase2 .form-style-2 .input-field:focus, 
-.purchase2 .form-style-2 .tel-number-field:focus, 
-.purchase2 .form-style-2 .textarea-field:focus,  
-.purchase2 .form-style-2 .select-field:focus{
-	border: 1px solid #0C0;
-}
-.purchase2 .form-style-2 .textarea-field{
-	height:100px;
-	width: 55%;
-}
-.purchase2 .form-style-2 input[type=submit],
-.purchase2 .form-style-2 input[type=button]{
-	border: none;
-	padding: 8px 15px 8px 15px;
-	background: #FF8500;
-	color: #fff;
-	box-shadow: 1px 1px 4px #DADADA;
-	-moz-box-shadow: 1px 1px 4px #DADADA;
-	-webkit-box-shadow: 1px 1px 4px #DADADA;
-	border-radius: 3px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-}
-.purchase2 .form-style-2 input[type=submit]:hover,
-.purchase2 .form-style-2 input[type=button]:hover{
-	background: #EA7B00;
-}
 .seller_info{
     width: 400px;
     text-align: center;
@@ -613,6 +478,9 @@ input:disabled{
     list-style: none;
     font-size: 12px;
 }
+.review .content{
+    display: none !important;
+}
 .review .comment_list .buyer:before {
     display: block;
     font-size: 2em;
@@ -690,6 +558,136 @@ input:disabled{
     }
     .purchase .label {
         width: 38%;
+    }
+    .purchase2 {
+        border-top: 1px rgba(0,0,0,.1) solid;
+        border-radius: 30px;
+        padding-left: 40px;
+        /* border-radius: 30px 30px 0px 0px; */
+    }
+    .purchase2 ul {
+        display: table;
+        border-collapse: collapse;
+        width: 100%;
+        margin: 2em 0;
+    }
+    .purchase2 li {
+        display: table-row;
+        list-style: none;
+    }
+    .purchase2 .form-style-2 {
+        padding: 0;
+    }
+    .purchase2 .label {
+        width: 38%;
+        padding-bottom: 0px;
+        font-weight: 600px;
+        font-size: small;
+    }
+    .purchase2 .total {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #fff;
+        border: none;
+        border-top: 1px rgba(0,0,0,.1) solid;
+        border-radius: 0.25em;
+    }
+    .purchase2 .total .counter .total_price {
+        font-size: 12px;
+    }
+    .purchase2 .total .counter .currency {
+        font-size: 12px;
+    }
+    .purchase2 .cart_btn button{
+        font-size: 12px;
+    }
+    .purchase2 .cart_btn{
+        padding-top: 10px;
+    }
+    .purchase2 .cart_btn .fa{
+        font-weight: bold;
+        font-size: 15px;
+        padding-right: 10px;
+    }
+    .purchase2 .cart_btn .btn{
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+    .purchase2 .select-field{
+        padding: 4px;
+    }
+    .purchase2 .form-style-2 input.input-field{
+        padding: 4px;
+    }
+    .purchase2 .form-style-2{
+        padding: 20px 12px 10px 20px;
+        font: 13px Arial, Helvetica, sans-serif;
+    }
+    .purchase2 .form-style-2 label{
+        display: block;
+        margin: 0px 0px 15px 0px;
+    }
+    .purchase2 .form-style-2 label > span{
+        width: 100px;
+        font-weight: bold;
+        float: left;
+        padding-top: 8px;
+        padding-right: 5px;
+    }
+    .purchase2 .form-style-2 span.required{
+        color:red;
+    }
+    .purchase2 .form-style-2 .tel-number-field{
+        width: 40px;
+        text-align: center;
+    }
+    .purchase2 .form-style-2 input.input-field, .form-style-2 .select-field{
+        width: 100%;	
+    }
+    .purchase2 .form-style-2 input.input-field, 
+    .purchase2.form-style-2 .tel-number-field, 
+    .purchase2 .form-style-2 .textarea-field, 
+    .purchase2 .form-style-2 .select-field{
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        border: 1px solid #C2C2C2;
+        box-shadow: 1px 1px 4px #EBEBEB;
+        -moz-box-shadow: 1px 1px 4px #EBEBEB;
+        -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        padding: 7px;
+        outline: none;
+    }
+    .purchase2 .form-style-2 .input-field:focus, 
+    .purchase2 .form-style-2 .tel-number-field:focus, 
+    .purchase2 .form-style-2 .textarea-field:focus,  
+    .purchase2 .form-style-2 .select-field:focus{
+        border: 1px solid #0C0;
+    }
+    .purchase2 .form-style-2 .textarea-field{
+        height:100px;
+        width: 55%;
+    }
+    .purchase2 .form-style-2 input[type=submit],
+    .purchase2 .form-style-2 input[type=button]{
+        border: none;
+        padding: 8px 15px 8px 15px;
+        background: #FF8500;
+        color: #fff;
+        box-shadow: 1px 1px 4px #DADADA;
+        -moz-box-shadow: 1px 1px 4px #DADADA;
+        -webkit-box-shadow: 1px 1px 4px #DADADA;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+    }
+    .purchase2 .form-style-2 input[type=submit]:hover,
+    .purchase2 .form-style-2 input[type=button]:hover{
+        background: #EA7B00;
     }
     .buy_btn{
         display: block;
@@ -790,27 +788,27 @@ input:disabled{
 
 
 
-
 .modal-window {
-  position: absolute;
+  position: fixed;
   background-color: rgba(255, 255, 255, 0.25);
   top: 0;
   right: 0;
-  bottom: 0;
+  bottom: -40;
   left: 0;
   z-index: 999;
-  visibility: hidden;
+  display: none;
   opacity: 0;
   pointer-events: none;
-  transition: ease-in-out 0.3s;
+  transition: all 0.3s;
+  box-shadow :0 5px 30px rgba(0 0 0.25)
   }
   .modal-window:target{
-    visibility: visible;
+    display: block;
     opacity: 1;
     pointer-events: auto;
   }
   .modal-window > div {
-    width: 400px;
+   
     position: absolute;
     top: 50%;
     left: 50%;

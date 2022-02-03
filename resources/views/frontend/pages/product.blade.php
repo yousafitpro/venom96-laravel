@@ -2,8 +2,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <script src="{{asset('js/product.js')}}"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   
- <div class="container" >
+ <div class="container">
    <div class="row">
      <div class="col-md-4 image">
       <div class="item_photo">
@@ -163,14 +164,14 @@
               </div>
             </div>
 
-            <div class="buy_btn popup_ctrl">
-               <button type="button" class="btn btn-primary btn-lg"><a  href="#open-modal"> Buy Now</a> </button>
+            <div class="buy_btn">
+               <button type="button" class="btn btn-primary btn-lg" onclick="openPopup()"><a  href="#open-modal"> Buy Now</a> </button>
             </div>
-              {{-- <div id="open-modal" class="modal-window">
+              <div id="open-modal" class=" modal modal-window" >
                 <div class="purchase2">
                   <div class="item_purchase">
                     <div class="inner">
-                      <label for="" class=" close_btn fa fa-times fa-lg"></label>
+                      <label for="" data-dismiss="#open-modal" class=" close_btn fa-lg" onclick="closePopup()">&times;</label>
                       <div class="form-style-2">
                         <form action="" method="post">
                           <ul>
@@ -276,7 +277,7 @@
                   </div>
                 </div>
                 </div>
-              </div> --}}
+              </div>
           </div>
         </div>
       </div>
@@ -416,7 +417,7 @@
             </div>
             <div>
                 <ul class="comment_list">
-                  <li class="content">
+                  <li>
                     <div class="buyer">
                       <span style='color:rgb(22, 156, 22); font-size:30px;'>&#9787;</span>
                     <b> John</b>
@@ -426,7 +427,7 @@
                     </div>
                     <div class="comment">Great</div>
                   </li>
-                  <li class="content">
+                  <li>
                     <div class="buyer">
                       <span style='color:rgb(22, 156, 22); font-size:30px;'>&#9787;</span>
                     <b> John</b>
@@ -436,7 +437,7 @@
                     </div>
                     <div class="comment">Great</div>
                   </li>
-                  <li class="content">
+                  <li>
                     <div class="buyer">
                       <span style='color:rgb(22, 156, 22); font-size:30px;'>&#9787;</span>
                     <b> John</b>
@@ -446,7 +447,7 @@
                     </div>
                     <div class="comment">Great</div>
                   </li>
-                  <li class="content">
+                  <li>
                     <div class="buyer">
                       <span style='color:rgb(22, 156, 22); font-size:30px;'>&#9787;</span>
                     <b> John</b>
@@ -518,7 +519,7 @@
                   </li>
                 </ul>
                 <div class="More_btn">
-                  <button class="btn btn-primary" id="loadMore"><a href="#" >Load More Comments</a></button>
+                  <button class="btn btn-primary" id="loadMore" onclick="seeMore()"><a href="#" >Load More Comments</a></button>
                 </div>
             </div>
           </div>
@@ -528,16 +529,41 @@
 </div>
   
 <script>
-  $(document).ready(function(){
-  $(".content").slice(0, 4).show();
+  
+
+  
+  function closePopup(){
+   $('.modal-window').css('display','none');
+  }
+
+  function openPopup(){
+   $('.modal-window').css('display','block');
+  }
+   
+  function seeMore(){
+    $(".content").slice(0, 4).show();
   $("#loadMore").on("click", function(e){
     e.preventDefault();
     $(".content:hidden").slice(0, 4).slideDown();
     if($(".content:hidden").length == 0) {
       $("#loadMore").text(" ").addClass("noContent");
     }
-  });
+  }
+}
   
-})
+
+$(document).ready(function(){
+		    $('.count').prop('disabled', true);
+   			$(document).on('click','.plus',function(){
+				$('.count').val(parseInt($('.count').val()) + 1 );
+    		});
+        	$(document).on('click','.minus',function(){
+    			$('.count').val(parseInt($('.count').val()) - 1 );
+    				if ($('.count').val() == 0) {
+						$('.count').val(1);
+					}
+    	    	});
+ 		});
 </script>
+
 
