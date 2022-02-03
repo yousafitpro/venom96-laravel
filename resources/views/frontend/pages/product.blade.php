@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <script src="{{asset('js/product.js')}}"></script>
   
- <div class="container">
+ <div class="container" >
    <div class="row">
      <div class="col-md-4 image">
       <div class="item_photo">
@@ -166,11 +166,11 @@
             <div class="buy_btn popup_ctrl">
                <button type="button" class="btn btn-primary btn-lg"><a  href="#open-modal"> Buy Now</a> </button>
             </div>
-              <div id="open-modal" class="modal-window">
+              {{-- <div id="open-modal" class="modal-window">
                 <div class="purchase2">
                   <div class="item_purchase">
                     <div class="inner">
-                      <label for="" class=" close_btn fa fa-times fa-lg" (click)="closeForm()"></label>
+                      <label for="" class=" close_btn fa fa-times fa-lg"></label>
                       <div class="form-style-2">
                         <form action="" method="post">
                           <ul>
@@ -276,7 +276,7 @@
                   </div>
                 </div>
                 </div>
-              </div>
+              </div> --}}
           </div>
         </div>
       </div>

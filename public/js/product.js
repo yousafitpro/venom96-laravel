@@ -15,7 +15,7 @@
 
 
 function closeForm() {
-  document.getElementById("popup").style.display = "none";
+  document.getElementById("modal-window").style.display = "none";
 }
  /********************* Load More **********************/
 
