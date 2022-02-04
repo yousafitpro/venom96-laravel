@@ -4,7 +4,7 @@
 <script src="{{asset('js/product.js')}}"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   
- <div class="container">
+ <div class="container-fluid">
    <div class="row">
      <div class="col-md-4 image">
       <div class="item_photo">

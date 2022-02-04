@@ -800,7 +800,7 @@ input:disabled{
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s;
-  box-shadow :0 5px 30px rgba(0 0 0.25)
+  box-shadow :0 5px 30px rgba(0 0 0.25);
   }
   .modal-window:target{
     display: block;
@@ -821,5 +821,29 @@ input:disabled{
     margin: 0 0 15px;
   }
 
-
+  body{
+    padding:50px;
+  }
+  
+  .modal.fade .modal-dialog{
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+  }
+  
+  .zoom-in {
+    transform: scale(0)!important;
+    opacity: 0;
+    -webkit-transition: 1.5s all 0s;
+    -moz-transition: 1.5s all 0s;
+    -ms-transition: 1.5s all 0s;
+    -o-transition: 1.5s all 0s;
+    transition: 1.5s all 0s;
+    display: block !important;
+  }
+  
+  .zoom-in.show {
+    opacity: 1;
+    transform: scale(1)!important;
+    transform:none;
+  }
 
