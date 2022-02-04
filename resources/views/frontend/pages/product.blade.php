@@ -1,9 +1,10 @@
-<link href="{{asset('css/product.css')}}" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="{{asset('js/product.js')}}"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-  
+{{--<link href="{{asset('css/product.css')}}" rel="stylesheet">--}}
+{{--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">--}}
+{{--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">--}}
+{{--<script src="{{asset('js/product.js')}}"></script>--}}
+{{--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>--}}
+@extends('layouts.frontend')
+@section('content')
  <div class="container-fluid">
    <div class="row">
      <div class="col-md-4 image">
@@ -82,7 +83,7 @@
                         <li>
                           <div class="label">
                             Server
-                          </div> 
+                          </div>
                           <div class="input">
                             <label for="field4">
                               <select name="field4" class="select-field">
@@ -100,42 +101,42 @@
                             </label>
                           </div>
                         </li>
-                        <li>  
+                        <li>
                           <div class="label">
                             Item Name
-                          </div>    
+                          </div>
                           <div class="input">
                             <label for="field1"></span><input type="text" class="input-field" name="field1" value="" /></label>
                           </div>
                         </li>
-                        <li>  
+                        <li>
                           <div class="label">
                             Item Type
-                          </div>    
+                          </div>
                           <div class="input">
                             <label for="field1"></span><input type="text" class="input-field" name="field1" value="" /></label>
                           </div>
                         </li>
-                        <li>  
+                        <li>
                           <div class="label">
                             Item Ranks
-                          </div>    
+                          </div>
                           <div class="input">
                             <label for="field1"></span><input type="text" class="input-field" name="field1" value="" /></label>
                           </div>
                         </li>
-                        <li>  
+                        <li>
                           <div class="label">
-                            Registered Price	
-                          </div>    
+                            Registered Price
+                          </div>
                           <div class="input">
                             <label for="field1"></span><input type="text" class="input-field" name="field1" value="" /></label>
                           </div>
                         </li>
-                        <li>  
+                        <li>
                           <div class="label">
                             Listed Item Duration
-                          </div>    
+                          </div>
                           <div class="input">
                             <label for="field1"></span><input type="text" class="input-field" name="field1" value="" /></label>
                           </div>
@@ -195,7 +196,7 @@
                             <li>
                               <div class="label">
                                 Server
-                              </div> 
+                              </div>
                               <div class="input">
                                 <label for="field4">
                                   <select name="field4" class="select-field">
@@ -213,42 +214,42 @@
                                 </label>
                               </div>
                             </li>
-                            <li>  
+                            <li>
                               <div class="label">
                                 Item Name
-                              </div>    
+                              </div>
                               <div class="input">
                                 <label for="field1"></span><input type="text" class="input-field" name="field1" value="" /></label>
                               </div>
                             </li>
-                            <li>  
+                            <li>
                               <div class="label">
                                 Item Type
-                              </div>    
+                              </div>
                               <div class="input">
                                 <label for="field1"></span><input type="text" class="input-field" name="field1" value="" /></label>
                               </div>
                             </li>
-                            <li>  
+                            <li>
                               <div class="label">
                                 Item Ranks
-                              </div>    
+                              </div>
                               <div class="input">
                                 <label for="field1"></span><input type="text" class="input-field" name="field1" value="" /></label>
                               </div>
                             </li>
-                            <li>  
+                            <li>
                               <div class="label">
-                                Registered Price	
-                              </div>    
+                                Registered Price
+                              </div>
                               <div class="input">
                                 <label for="field1"></span><input type="text" class="input-field" name="field1" value="" /></label>
                               </div>
                             </li>
-                            <li>  
+                            <li>
                               <div class="label">
                                 Listed Item Duration
-                              </div>    
+                              </div>
                               <div class="input">
                                 <label for="field1"></span><input type="text" class="input-field" name="field1" value="" /></label>
                               </div>
@@ -281,8 +282,8 @@
           </div>
         </div>
       </div>
-    </div> 
-  </div>  
+    </div>
+  </div>
    <div class="row">
       <div class="col-md-4 seller">
         <div class="seller_info">
@@ -383,14 +384,14 @@
             </a>
           </div>
         </div>
-      </div>  
+      </div>
       <div class="col-md-8">
         <div class=" desc">
           <div class="item_desc">
             <h3>Item Description</h3>
             <div>5 mins delivery, Message Me Thru KChat</div>
           </div>
-        </div> 
+        </div>
           <div class="review">
             <h3>User Reviews</h3>
             <div class="top">
@@ -523,15 +524,15 @@
                 </div>
             </div>
           </div>
-        
-      </div>
-   </div> 
-</div>
-  
-<script>
-  
 
-  
+      </div>
+   </div>
+</div>
+
+<script>
+
+
+
   function closePopup(){
    $('.modal-window').css('display','none');
   }
@@ -539,7 +540,7 @@
   function openPopup(){
    $('.modal-window').css('display','block');
   }
-   
+
   function seeMore(){
     $(".content").slice(0, 4).show();
   $("#loadMore").on("click", function(e){
@@ -550,7 +551,7 @@
     }
   }
 }
-  
+
 
 $(document).ready(function(){
 		    $('.count').prop('disabled', true);
@@ -565,5 +566,6 @@ $(document).ready(function(){
     	    	});
  		});
 </script>
+@endsection
 
 
