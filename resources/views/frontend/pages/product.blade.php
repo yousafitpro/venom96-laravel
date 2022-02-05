@@ -13,7 +13,7 @@
         </div>
        </div>
      </div>
-     <div class="col-md-8">
+     <div class="col-md-8 one">
       <div class="basic">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
