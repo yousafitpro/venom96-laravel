@@ -4,14 +4,16 @@
     <link href="{{asset('css/product.css')}}" rel="stylesheet">
  <div class="container-fluid">
    <div class="row">
-     <div class="col-md-4 image">
-      <div class="item_photo">
-        <a href="#" class="product_img">
-          <img src="{{asset('images/product.webp')}}" alt="">
-        </a>
-      </div>
+     <div class="col-md-4">
+       <div class="image">
+        <div class="item_photo">
+          <a href="#" class="product_img">
+            <img src="{{asset('images/product.webp')}}" alt="">
+          </a>
+        </div>
+       </div>
      </div>
-     <div class="col-md-8">
+     <div class="col-md-8 one">
       <div class="basic">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
@@ -161,116 +163,114 @@
                 </div>
               </div>
             </div>
-
+ 
             <div class="buy_btn">
-               <button type="button" class="btn btn-primary btn-lg" onclick="openPopup()"><a  href="#open-modal"> Buy Now</a> </button>
+               <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#open-modal"><a  href="#open-modal"> Buy Now</a> </button>
             </div>
-              <div id="open-modal" class=" modal modal-window" >
-                <div class="purchase2">
-                  <div class="item_purchase">
-                    <div class="inner">
-                      <label for="" data-dismiss="#open-modal" class=" close_btn fa-lg" onclick="closePopup()">&times;</label>
-                      <div class="form-style-2">
-                        <form action="" method="post">
-                          <ul>
-                            <li>
-                              <div class="label">Quantity</div>
-                              <div class="input">
-                              <div class="quantity_box">
-                              <label class="quantity_wrp cpt-quantity" quantity="140">
-                                <div class="qty">
-                                  <span class="minus">-</span>
-                                  <input type="number" class="count" name="qty" value="1">
-                                  <span class="plus">+</span>
-                              </div>
+              <div id="open-modal" class=" modal modal-window purchase2" >
+                <div class="item_purchase">
+                  <div class="inner">
+                    <div class="form-style-2">
+                      <label for="" data-dismiss="modal" class=" close fa-lg">&times;</label>
+                      <form action="" method="post">
+                        <ul>
+                          <li>
+                            <div class="label">Quantity</div>
+                            <div class="input">
+                            <div class="quantity_box">
+                            <label class="quantity_wrp cpt-quantity" quantity="140">
+                              <div class="qty">
+                                <span class="minus">-</span>
+                                <input type="number" class="count" name="qty" value="1">
+                                <span class="plus">+</span>
+                            </div>
+                            </label>
+                            </div>
+                            <div class="tips_wrp">
+                            <div class="tips">Purchase range: 1 ~ 140</div>
+                            </div>
+                            </div>
+                            </li>
+                          <li>
+                            <div class="label">
+                              Server
+                            </div>
+                            <div class="input">
+                              <label for="field4">
+                                <select name="field4" class="select-field">
+                                  <option value="General Question">General</option>
+                                  <option value="Advertise">Advertisement</option>
+                                  <option value="Partnership">Partnership</option>
+                                </select>
                               </label>
-                              </div>
-                              <div class="tips_wrp">
-                              <div class="tips">Purchase range: 1 ~ 140</div>
-                              </div>
-                              </div>
-                              </li>
-                            <li>
-                              <div class="label">
-                                Server
-                              </div>
-                              <div class="input">
-                                <label for="field4">
-                                  <select name="field4" class="select-field">
-                                    <option value="General Question">General</option>
-                                    <option value="Advertise">Advertisement</option>
-                                    <option value="Partnership">Partnership</option>
-                                  </select>
-                                </label>
-                                <label for="field4">
-                                  <select name="field4" class="select-field">
-                                    <option value="General Question">General</option>
-                                    <option value="Advertise">Advertisement</option>
-                                    <option value="Partnership">Partnership</option>
-                                  </select>
-                                </label>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="label">
-                                Item Name
-                              </div>
-                              <div class="input">
-                                <label for="field1"></span><input type="text" class="input-field" name="field1" value="" /></label>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="label">
-                                Item Type
-                              </div>
-                              <div class="input">
-                                <label for="field1"></span><input type="text" class="input-field" name="field1" value="" /></label>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="label">
-                                Item Ranks
-                              </div>
-                              <div class="input">
-                                <label for="field1"></span><input type="text" class="input-field" name="field1" value="" /></label>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="label">
-                                Registered Price
-                              </div>
-                              <div class="input">
-                                <label for="field1"></span><input type="text" class="input-field" name="field1" value="" /></label>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="label">
-                                Listed Item Duration
-                              </div>
-                              <div class="input">
-                                <label for="field1"></span><input type="text" class="input-field" name="field1" value="" /></label>
-                              </div>
-                            </li>
-                          </ul>
-                          <div class="total">
-                            <div class="counter">
-                                  <ul>
-                                    <li>
-                                      <div class="total_price">
-                                          Total Price
-                                      </div>
-                                      <div class="currency">
-                                          US$ 1.58
-                                      </div>
-                                    </li>
-                                  </ul>
+                              <label for="field4">
+                                <select name="field4" class="select-field">
+                                  <option value="General Question">General</option>
+                                  <option value="Advertise">Advertisement</option>
+                                  <option value="Partnership">Partnership</option>
+                                </select>
+                              </label>
                             </div>
-                            <div class="cart_btn">
-                                <label><button class="btn btn-primary" type="submit">Add To Cart</button></label>
+                          </li>
+                          <li>
+                            <div class="label">
+                              Item Name
                             </div>
+                            <div class="input">
+                              <label for="field1"></span><input type="text" class="input-field" name="field1" value="" /></label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="label">
+                              Item Type
+                            </div>
+                            <div class="input">
+                              <label for="field1"></span><input type="text" class="input-field" name="field1" value="" /></label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="label">
+                              Item Ranks
+                            </div>
+                            <div class="input">
+                              <label for="field1"></span><input type="text" class="input-field" name="field1" value="" /></label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="label">
+                              Registered Price
+                            </div>
+                            <div class="input">
+                              <label for="field1"></span><input type="text" class="input-field" name="field1" value="" /></label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="label">
+                              Listed Item Duration
+                            </div>
+                            <div class="input">
+                              <label for="field1"></span><input type="text" class="input-field" name="field1" value="" /></label>
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="total">
+                          <div class="counter">
+                                <ul>
+                                  <li>
+                                    <div class="total_price">
+                                        Total Price
+                                    </div>
+                                    <div class="currency">
+                                        US$ 1.58
+                                    </div>
+                                  </li>
+                                </ul>
                           </div>
-                        </form>
-                      </div>
+                          <div class="cart_btn">
+                              <label><button class="btn btn-primary" type="submit">Add To Cart</button></label>
+                          </div>
+                        </div>
+                      </form>
                     </div>
                   </div>
                 </div>
@@ -282,103 +282,105 @@
     </div>
   </div>
    <div class="row">
-      <div class="col-md-4 seller">
-        <div class="seller_info">
-          <div class="seller_name">
-            <div class="name" >
-              aroojsaghar
+      <div class="col-md-4">
+        <div class="seller">
+          <div class="seller_info">
+            <div class="seller_name">
+              <div class="name" >
+                aroojsaghar
+              </div>
+              <div class="status">
+              <i class="fa fa-heart" style="color: red"></i>
+              <i class="fa fa-heart" style="color: red"></i>
+              <i class="fa fa-heart" style="color: red"></i>
+              </div>
             </div>
-            <div class="status">
-            <i class="fa fa-heart" style="color: red"></i>
-            <i class="fa fa-heart" style="color: red"></i>
-            <i class="fa fa-heart" style="color: red"></i>
-            </div>
-          </div>
-          <div class="data">
-            <ul>
-              <li>
-                <div class="task">
-                  Order Success
-                </div>
-                <div class="percentage">
-                    96.67%
-                </div>
-              </li>
-              <li>
-              <div class="task">
-                Total Sales
-              </div>
-              <div class="percentage">
-                  83
-              </div>
-            </li>
-            <li>
-              <div class="task">
-                Average Delivery Time
-              </div>
-              <div class="percentage">
-                1hr 37min
-              </div>
-            </li>
-            <li>
-              <div class="task">
-                Last Active Time
-              </div>
-              <div class="percentage">
-                19hr 17min ago
-              </div>
-            </li>
-            </ul>
-          </div>
-          <div class="rank">
             <div class="data">
               <ul>
                 <li>
                   <div class="task">
-                    Item Description
+                    Order Success
                   </div>
                   <div class="percentage">
-                      5.00
+                      96.67%
                   </div>
                 </li>
                 <li>
-                  <div class="task">
-                    Service Quality
-                  </div>
-                  <div class="percentage">
-                      5.00
-                  </div>
-                </li>
-                <li>
-                  <div class="task">
-                  Delivery Speed
-                  </div>
-                  <div class="percentage">
-                    5.00
-                  </div>
-                </li>
+                <div class="task">
+                  Total Sales
+                </div>
+                <div class="percentage">
+                    83
+                </div>
+              </li>
+              <li>
+                <div class="task">
+                  Average Delivery Time
+                </div>
+                <div class="percentage">
+                  1hr 37min
+                </div>
+              </li>
+              <li>
+                <div class="task">
+                  Last Active Time
+                </div>
+                <div class="percentage">
+                  19hr 17min ago
+                </div>
+              </li>
               </ul>
             </div>
-          </div>
-          <div class="icons">
-            <a href="#">
-              <div>
-              <i class="fa fa-user"></i>
+            <div class="rank">
+              <div class="data">
+                <ul>
+                  <li>
+                    <div class="task">
+                      Item Description
+                    </div>
+                    <div class="percentage">
+                        5.00
+                    </div>
+                  </li>
+                  <li>
+                    <div class="task">
+                      Service Quality
+                    </div>
+                    <div class="percentage">
+                        5.00
+                    </div>
+                  </li>
+                  <li>
+                    <div class="task">
+                    Delivery Speed
+                    </div>
+                    <div class="percentage">
+                      5.00
+                    </div>
+                  </li>
+                </ul>
               </div>
-              <span>Info</span>
-            </a>
-            <a href="#">
-              <div>
-              <i class="fa fa-home"></i>
-              </div>
-              <span>Store</span>
-            </a>
-            <a href="#">
-              <div>
-                <i class="fa fa-inbox"></i>
-              </div>
-              <span>Leave Message</span>
-            </a>
+            </div>
+            <div class="icons">
+              <a href="#">
+                <div>
+                <i class="fa fa-user"></i>
+                </div>
+                <span>Info</span>
+              </a>
+              <a href="#">
+                <div>
+                <i class="fa fa-home"></i>
+                </div>
+                <span>Store</span>
+              </a>
+              <a href="#">
+                <div>
+                  <i class="fa fa-inbox"></i>
+                </div>
+                <span>Leave Message</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -516,8 +518,10 @@
                     <div class="comment">Great</div>
                   </li>
                 </ul>
-                <div class="More_btn">
-                  <button class="btn btn-primary" id="loadMore" onclick="seeMore()"><a href="#" >Load More Comments</a></button>
+                <div class="cmnt_btn">
+                  <div class="More_btn">
+                    <button class="btn btn-primary" id="loadMore" onclick="seeMore()"><a href="#" >Load More Comments</a></button>
+                  </div>
                 </div>
             </div>
           </div>
