@@ -563,7 +563,8 @@ $(document).ready(function(){
     	    	});
  		});
 </script>
- <script src="{{asset('js/product.js')}}"></script>
+ <script src="{{asset('js/product.js')}}">
+ </script>
 @endsection
 
 
