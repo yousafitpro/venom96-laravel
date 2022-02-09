@@ -20,4 +20,12 @@ class myhomeController extends Controller
     {
         return view('frontend.pages.product');
     }
+    public function productCart($id)
+    {
+        return view('frontend.pages.cart');
+    }
+    public function productList($id)
+    {
+        return view('frontend.pages.product-list');
+    }
 }
