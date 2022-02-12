@@ -2,331 +2,152 @@
 @extends('layouts.frontend')
 @section('content')
     <link href="{{asset('css/cart.css')}}" rel="stylesheet">
-    <div class="container-fluid">
+
+
+    <section class="cart">
         <div class="inner">
-            <div class="row">
-                <div class="col-md-2">
-                    <div class="container">
-                        <div id="game_cover">
-                            <div class="cover"><img class="GamePic" alt="Final Fantasy XIV" src="{{asset('images/product.webp')}}"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div id="game_info">
-                        <h1>Final Fantasy XIV</h1>
-                        <ul>
-                            <li><span>Global</span></li>
-                            <li><span>PC</span></li>
-                            <li><span class="publisher">Square Enix</span></li>
-                        </ul>
-                    </div>    
-                </div>
-                <div class="col-md-3"></div>
-                <div class="col-md-3">
-                    <div id="short_cut">
-                        <a href="https://www.kaleoz.com/guide/category/buying-guide" id="item_buy_guide" target="_blank" icon="help_outline"><i class="fas fa-tag"></i><span><b>How to buy</b><i>Find out the buying guide here</i></span></a>
-                        <a href="https://www.kaleoz.com/sell?game_id=5" id="item_sell_link" icon="loyalty"><i class="fa-regular fa-circle-question"></i><span><b>Sell Product</b><i>List your item & start selling now</i></span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="content">
-            <div class="inside">
-               <div class="item_filter">
-                   <div class="filter_wrap">
-                       <div class="row">
-                        <div class="col-md-4">
-                            <h3>Search</h3>
-                            <div class="input-group mb-3">
-                             <div class="input-group-prepend">
-                               <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Product</button>
-                               <div class="dropdown-menu">
-                                 <a class="dropdown-item" href="#">Action</a>
-                                 <a class="dropdown-item" href="#">Another action</a>
-                                 <a class="dropdown-item" href="#">Something else here</a>
-                                 <div role="separator" class="dropdown-divider"></div>
-                                 <a class="dropdown-item" href="#">Separated link</a>
-                               </div>
-                             </div>
-                                 <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                 <div class="input-group-append">
-                                   <span class="input-group-text">
-                                       <i class="fa fa-search"></i>
-                                   </span>
-                                 </div>
-                           </div>
-                        </div>
-                        <div class="col-md-4">
-                             <div class="item_server">
-                                 <h3>Server</h3>
-                                 <div class="item_server_wrap">
-                                    <select name="languages" id="lang">
-                                      <option value="javascript">JavaScript</option>
-                                      <option value="php">PHP</option>
-                                      <option value="java">Java</option>
-                                      <option value="golang">Golang</option>
-                                      <option value="python">Python</option>
-                                      <option value="c#">C#</option>
-                                      <option value="C++">C++</option>
-                                      <option value="erlang">Erlang</option>
-                                    </select>
-                                    <select name="languages" id="lang">
-                                        <option value="javascript">JavaScript</option>
-                                        <option value="php">PHP</option>
-                                        <option value="java">Java</option>
-                                        <option value="golang">Golang</option>
-                                        <option value="python">Python</option>
-                                        <option value="c#">C#</option>
-                                        <option value="C++">C++</option>
-                                        <option value="erlang">Erlang</option>
-                                      </select>
-                                 </div>  
-                             </div>
-                        </div>
-                        <div class="col-md-4"></div>
-                       </div>
-                   </div>
-               </div>
-            </div>
-        </div>
-        <div class="product_list">
-           <div class="inside">
-            <div class="sorting">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="sort">
-                            <ul class="tabs">
-                                <li><div href="#hot" class="on"><span class="fa fa-fire"></span>Hot</div></li>
-                                <li><div href="#new"><span class="fa fa-clock-o"></span>New</div></li>
-                                <li class="sort_03"><div href="#price"><span class="fa fa-dollar"></span>Price</div></li>
-                                <li><div href="#credit"><span class="fa fa-thumbs-up"></span>Rating</div></li>
-                            </ul>
-                            {{-- <div class="pane">
-                                <div id="tab1">
-                                    <h2>Hello</h2>
-                                    <p>Hello hello hello.</p>
-                                    <p>Goodbye goodbye, goodbye</p>
+            <form action="" method="post">
+                <h1>
+                    Shopping Cart
+                </h1>
+                <div class="item_calculator">
+                    <div class="inside">
+                        <label class="cpt-checkbox checkbox_wrp">
+                            <input type="checkbox" name="select_all"><span class="sl">Select All</span>
+                            <span class="count"><b>1</b> item(s) selected</span>
+                            <span class="price">Total Price <b class="user-balance">RM 6.62</b></span>
+                            <div class="btc" id="ua-PayNowButton" eventlabel="Shopping Cart Pay Now">
+                                <div class="cart_btn">
+                                    <label><button class="btn btn-primary" type="submit"><i class='fa fa-shopping-cart'></i>Pay Now</button></label>
                                 </div>
-                                <div id="tab2" style="display:none;">
-                                    <h2>Hello2</h2>
-                                    <p>Hello2 hello2 hello2.</p>
-                                    <p>Goodbye2 goodbye2, goodbye2</p>
-                                </div>
-                            </div> --}}
-                        </div>
+                            </div>
+                        </label>
                     </div>
-                    <div class="col-md-4">
-                         <div class="status">
-                             <ul class="tabs">
-                                <li>
-                                    <div class="premium_seller_ctrl on" id="premium_seller_filter">
-                                        <span icon="recommend"><b>Premium Seller</b></span>
+                </div>
+                <div class="cart_list_wrap">
+                    <div class="seller_wrap">
+                        <a href="#">
+                            <i class="fa-solid fa-lg fa-circle-user"></i>
+                            <span>xuli112233</span>
+                            <span class="hearts">
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+                            </span>
+                            <span class="msg">
+                                <i class="fa-solid fa-message"></i>
+                            </span>
+                        </a>
+                    </div>
+                    <ul class="cart_list">
+                        <li class="title">
+                            <div class="item">Item</div>
+                            <div class="price">Price / Package</div>
+                            <div class="quantity">Quantity</div>
+                            <div class="amount">Amount</div>
+                            <div class="function"></div>
+                        </li>
+                        <li class="li_list">
+                            <div class="item">
+                                <label class="cpt-checkbox checkbox_wrp">
+                                    <input type="checkbox" name="select_all">
+                                </label>  
+                                <div class="item_info">
+                                    <span>
+                                        <div class="img">
+                                            <img src="{{asset('images/product.webp')}} " alt="">
+                                        </div>
+                                    </span>
+                                    <h3>
+                                        <a href="https://www.kaleoz.com/buy/ms-m/223331" target="_blank">
+                                            MapleStory M Game Coins Mesos Gold Coin Asia2 Scania Fast and Reputation trade (10% fee not covered)
+                                        </a>
+                                        <div class="function">
+                                            <span>
+                                                <i class="fa-solid fa-trash"></i>
+                                            </span>
+                                        </div>
+                                    </h3>
+                                    <div class="info_wrap">
+                                        <div class="dropdown">
+                                            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             Order Information
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <ul class="info_dropdown ">
+                                                    <li class="dropdown-item">
+                                                        <span class="T">Game</span><span class="C">MapleStory M</span>
+                                                    </li>
+                                                    <li class="dropdown-item">
+                                                        <span class="T">Item Category</span><span class="C">Mesos</span>
+                                                    </li>
+                                                    <li class="dropdown-item">
+                                                        <span class="T">Server</span><span class="C">Asia 2 - Asia 2 - Scania</span>
+                                                    </li>
+                                                    <li class="dropdown-item">
+                                                        <span class="T">Item Name</span><span class="C">a</span>
+                                                    </li>
+                                                    <li class="dropdown-item">
+                                                        <span class="T">Item Types</span><span class="C">a</span>
+                                                    </li>
+                                                    <li class="dropdown-item">
+                                                        <span class="T">Item Ranks</span><span class="C">aa</span>
+                                                    </li>
+                                                    <li class="dropdown-item">
+                                                        <span class="T">Registered Price</span><span class="C">a</span>
+                                                    </li>
+                                                    <li class="dropdown-item">
+                                                        <span class="T">Listed Item Duration</span><span class="C">a</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                          </div>
                                     </div>
-                                </li>
-                                <li>
-                                    <div class="online_seller_ctrl">
-                                        <span icon="3p">Online Seller</span>
+                                </div>  
+                            </div>
+                            <div class="price">
+                                <div class="pri_p"><b class="pri"><b class="user-balance">RM 6.62</b></b></div>
+                                <div class="pri_u">100m </div>
+                            </div>
+                            <div class="qtn">
+                                <ul>
+                                    <li>
+                                        <div class="quantity">
+                                            <div class="input">
+                                                <div class="quantity_box">
+                                                <label class="quantity_wrp cpt-quantity" quantity="140">
+                                                    <div class="qty">
+                                                        <span class="minus">-</span>
+                                                        <input type="number" class="count" name="qty" value="1">
+                                                        <span class="plus">+</span>
+                                                    </div>
+                                                </label>
+                                                </div>
+                                            </div>
                                     </div>
-                                </li>
-                             </ul>
-                         </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="layout">
-                            <div  id="layout_ctrl" class="btw" color="transparent"><span onclick="changeState()" id="fas" class="fa fa-list"></span></div>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="pager">
-                            <a href="?page=1" class="btw pre disabled" color="transparent"><span class="fa fa-angle-left"></span></a>
-                            <span class="pager_count"><i class="page_title">Page</i> <i class="current_page">2</i> / <i class="total_page">7</i></span>
-                            <a href="?page=3" data-page="7" class="btw next" color="transparent"><span class="fa fa-angle-right"></span></a>                        </div>
-                    </div>
-                </div>
-            </div>        
-              <ol class="list list-view-filter">
-                <li>
-                    <div class="item_list" data-item-count="156">
-                        <div class="unit" data-stock="100" data-seller-status="pro_seller" data-store-status="">
-                            <div class="cell tit">
-                            <div class="img_wrp">
-                                <a href="https://www.kaleoz.com/buy/ffxiv-a-realm-reborn/182742" target="_blank" eventlabel="Cheap Final Fantasy XIV Gil in NA Hyperion Server on Sale"><img class="ItemPic" alt="Cheap Final Fantasy XIV Gil in NA Hyperion Server on Sale" src="assets{{'images/product.webp'}} "></a>
-                            </div>
-                            <dl>
-                                <dt>
-                                <a href="https://www.kaleoz.com/buy/ffxiv-a-realm-reborn/182742" target="_blank" eventlabel="Cheap Final Fantasy XIV Gil in NA Hyperion Server on Sale">Cheap Final Fantasy XIV Gil in NA Hyperion Server on Sale</a>
-                                </dt>
-                                <dd> Server Group: North American - Primal </dd>
-                                <dd> Server: NA - Hyperion </dd>
-                            </dl>
-                            </div>
-                            <div class="cell pri">
-                                <ul>
-                                    <li class="price"><b class="user-balance">US$ 10.62</b> / 5m Gil</li>
-                                    <li class="unitprice"><b class="user-balance">US$ 1.00</b> = 470349.9494 Gil</li>
-                                    <li class="stock">Stock: 100</li>
-                                    <li class="trade">Trading volume: 0</li>
-                                </ul>
-                            </div>
-                            <div class="cell sel">
-                                <ul>
-                                    <li class="seller"><a href="https://www.kaleoz.com/seller/info?seller_id=1226154" target="_blank" class="name"><i class="fa fa-thumbs-up"></i>Umai007</a></li>
-                                    <li class="level"><div data-level="crown-Lv2" class="user-level">
-                                        <i class="fa fa-crown"></i>
-                                        <i class="fa fa-crown"></i>
-                                    </li>
-                                    <li class="chat">
-                                    <span><i class="fa-solid fa-message"></i>Chat with seller</span>
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>   
-                </li>
-                <li>
-                    <div class="item_list" data-item-count="156">
-                        <div class="unit" data-stock="100" data-seller-status="pro_seller" data-store-status="">
-                            <div class="cell tit">
-                            <div class="img_wrp">
-                                <a href="https://www.kaleoz.com/buy/ffxiv-a-realm-reborn/182742" target="_blank" eventlabel="Cheap Final Fantasy XIV Gil in NA Hyperion Server on Sale"><img class="ItemPic" alt="Cheap Final Fantasy XIV Gil in NA Hyperion Server on Sale" src="assets{{'images/product.webp'}} "></a>
-                            </div>
-                            <dl>
-                                <dt>
-                                <a href="https://www.kaleoz.com/buy/ffxiv-a-realm-reborn/182742" target="_blank" eventlabel="Cheap Final Fantasy XIV Gil in NA Hyperion Server on Sale">Cheap Final Fantasy XIV Gil in NA Hyperion Server on Sale</a>
-                                </dt>
-                                <dd> Server Group: North American - Primal </dd>
-                                <dd> Server: NA - Hyperion </dd>
-                            </dl>
-                            </div>
-                            <div class="cell pri">
-                                <ul>
-                                    <li class="price"><b class="user-balance">US$ 10.62</b> / 5m Gil</li>
-                                    <li class="unitprice"><b class="user-balance">US$ 1.00</b> = 470349.9494 Gil</li>
-                                    <li class="stock">Stock: 100</li>
-                                    <li class="trade">Trading volume: 0</li>
-                                </ul>
-                            </div>
-                            <div class="cell sel">
-                                <ul>
-                                    <li class="seller"><a href="https://www.kaleoz.com/seller/info?seller_id=1226154" target="_blank" class="name"><i class="fa fa-thumbs-up"></i>Umai007</a></li>
-                                    <li class="level"><div data-level="crown-Lv2" class="user-level">
-                                        <i class="fa fa-crown"></i>
-                                        <i class="fa fa-crown"></i>
-                                    </li>
-                                    <li class="chat">
-                                    <span><i class="fa-solid fa-message"></i>Chat with seller</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>   
-                </li>
-                <li>
-                    <div class="item_list" data-item-count="156">
-                        <div class="unit" data-stock="100" data-seller-status="pro_seller" data-store-status="">
-                            <div class="cell tit">
-                            <div class="img_wrp">
-                                <a href="https://www.kaleoz.com/buy/ffxiv-a-realm-reborn/182742" target="_blank" eventlabel="Cheap Final Fantasy XIV Gil in NA Hyperion Server on Sale"><img class="ItemPic" alt="Cheap Final Fantasy XIV Gil in NA Hyperion Server on Sale" src="assets{{'images/product.webp'}} "></a>
-                            </div>
-                            <dl>
-                                <dt>
-                                <a href="https://www.kaleoz.com/buy/ffxiv-a-realm-reborn/182742" target="_blank" eventlabel="Cheap Final Fantasy XIV Gil in NA Hyperion Server on Sale">Cheap Final Fantasy XIV Gil in NA Hyperion Server on Sale</a>
-                                </dt>
-                                <dd> Server Group: North American - Primal </dd>
-                                <dd> Server: NA - Hyperion </dd>
-                            </dl>
-                            </div>
-                            <div class="cell pri">
-                                <ul>
-                                    <li class="price"><b class="user-balance">US$ 10.62</b> / 5m Gil</li>
-                                    <li class="unitprice"><b class="user-balance">US$ 1.00</b> = 470349.9494 Gil</li>
-                                    <li class="stock">Stock: 100</li>
-                                    <li class="trade">Trading volume: 0</li>
-                                </ul>
-                            </div>
-                            <div class="cell sel">
-                                <ul>
-                                    <li class="seller"><a href="https://www.kaleoz.com/seller/info?seller_id=1226154" target="_blank" class="name"><i class="fa fa-thumbs-up"></i>Umai007</a></li>
-                                    <li class="level"><div data-level="crown-Lv2" class="user-level">
-                                        <i class="fa fa-crown"></i>
-                                        <i class="fa fa-crown"></i>
-                                    </li>
-                                    <li class="chat">
-                                    <span><i class="fa-solid fa-message"></i>Chat with seller</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>   
-                </li>
-              </ol>
-           </div>
-        </div>
-        <div class="about">
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="video">
-                        <div class="youtube-player"> 
-                            <video controls="controls" src="https://youtu.be/X9Ssx9AXYk4">
-                            </video>                        
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-7">
-                    <div class="intro">
-                            <article>
-                                <h2>About Final Fantasy XIV</h2>
-                                <div>
-                                    <b>Final Fantasy XIV FF14</b> has come a long way since its
-                                    rather rough initial release, but the long grind of gathering
-                                    FFXIV Gil is one thing that hasn't changed. Obtaining FF14 Gil
-                                    takes a lot of time -- time that could otherwise be spent 
-                                    enjoying some of the game's content. With the release of four
-                                    major expansion packs: Heavensward (2015), Stormblood (2017), 
-                                    Shadowbringers (2019), and Endwalker (2021).<p>There are plenty
-                                    of places to choose from, but here at KALEOZ.com, we offer
-                                    the best value and prices for those looking to purchase
-                                    FFXIV Gil. In FF14, in-game currency is required for buying
-                                    supplies, equipment and -- most importantly -- crafting. FFXIV
-                                    Gil is especially needed in large amounts when purchasing
-                                    or creating higher tier items. KALEOZ.com provides a simple and 
-                                    affordable way to buy FFXIV Gil.<p>
+                            <div class="amount">
+                                <div class="amt_p" data-title="Amount">
+                                    <b class="pri"><b class="user-balance">RM 6.62</b></b> 
                                 </div>
-                            </article>
-                    </div>
+                            </div>
+                            <div class="function">
+                                <span>
+                                    <i class="fa-solid fa-trash"></i>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </div>
+            </form>
+
         </div>
-    </div>
-  <script>
-      // Layout Toggle
-    const changeState = () => {
-        const layout = document.getElementById('fas');
-        layout.classList.toggle("fa-table-cells-large");
-    }
+    </section>
 
-    const listViewButton = document.querySelector('.fa-list');
-    const gridViewButton = document.querySelector('.fa-table-cells-large');
-    const list = document.querySelector('ol');
 
-    // listViewButton.onclick = function () {
-    // list.classList.remove('grid-view-filter');
-    // list.classList.add('list-view-filter');
-    // }
-
-    // gridViewButton.onclick = function () {
-    // list.classList.remove('list-view-filter');
-    // list.classList.add('grid-view-filter');
-    // }
-
-      $(document).ready(function() {
-    $("ul.tabs a").click(function() {
-        $(".pane div").hide();
-        $($(this).attr("href")).show();
-    });
-})
-  </script>
  <script src="{{asset('js/cart.js')}}"></script>
 @endsection
 
