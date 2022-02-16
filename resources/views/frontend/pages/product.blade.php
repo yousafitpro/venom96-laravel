@@ -8,7 +8,7 @@
        <div class="image">
         <div class="item_photo">
           <a href="#" class="product_img">
-            <img src="{{asset('images/product.webp')}}" alt="">
+            <img src="{{$product->image_url}}" alt="">
           </a>
         </div>
        </div>
@@ -24,8 +24,7 @@
         </nav>
         <div class="item_info">
           <h1>
-             MapleStory M Game Coins Mesos Gold Coin Asia2 Scania Fast
-             and Reputation trade (10% fee not covered)
+             {{$product->name}}
           </h1>
           <div class="item_info">
             <ul class="price_list">
@@ -33,7 +32,7 @@
                 <div class="title"> Price </div>
                 <div class="currency">
                   <span class="price">
-                    <b class="balance">US$ 1.58 </b>
+                    <b class="balance">{{$product->pr}} </b>
                   </span>
                   / 100m
                 </div>
@@ -163,7 +162,7 @@
                 </div>
               </div>
             </div>
- 
+
             <div class="buy_btn">
                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#open-modal"><a  href="#open-modal"> Buy Now</a> </button>
             </div>

@@ -27,6 +27,7 @@ class CreateProductsTable extends Migration
             $table->longText("short_info")->default('');
             $table->string("thumbnail")->default('');
             $table->string("is_deleted")->default('0');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
