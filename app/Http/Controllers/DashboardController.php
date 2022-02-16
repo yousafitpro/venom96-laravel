@@ -18,9 +18,12 @@ class DashboardController extends Controller
     }
     public function index()
     {
+
+
         if(Auth::user()->type=='user')
         {
-            return redirect(route('user.showProfile'));
+
+            return redirect(route('home.index'));
         }
         $data['userCount']=User::all()->count()-1;
         $data['users']=User::where('id','!=',Auth::user()->id)->whereDate('created_at', DB::raw('CURDATE()'))->get();

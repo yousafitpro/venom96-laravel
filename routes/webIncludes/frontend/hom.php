@@ -8,5 +8,5 @@ Route::get('product/{id}',[App\Http\Controllers\myhomeController::class, 'produc
 //Route::get('cart/{id}',[App\Http\Controllers\myhomeController::class, 'productCart'])->name('home.productDetails');
 Route::get('product-list/{id}',[App\Http\Controllers\myhomeController::class, 'productList'])->name('home.productDetails');
 
-Route::post('product/addToCart/{id}',[App\Http\Controllers\OrderProductController::class, 'addToCart'])->name('home.addToCart');
+Route::middleware('auth')->post('product/addToCart/{id}',[App\Http\Controllers\OrderProductController::class, 'addToCart'])->name('home.addToCart');
 Route::get('cart/{id}',[App\Http\Controllers\OrderProductController::class, 'cart'])->name('home.cart');

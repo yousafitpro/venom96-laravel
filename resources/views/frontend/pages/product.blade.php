@@ -535,12 +535,18 @@
 function addToCart()
 {
 
+    if ('{{auth()->check()}}'!="1")
+    {
+        alert("Please Login First")
+    }
+
     var order_id=null;
     var product_id="{{$product->id}}";
     if (localStorage.getItem("order_id"))
     {
         order_id=localStorage.getItem("order_id")
     }
+
     $.ajax({
         type: 'post',
         url: "{{route('home.addToCart',$product->id)}}",
@@ -548,9 +554,10 @@ function addToCart()
         order_id,product_id
         },
         success: function (data) {
+            console.log(data.order_id)
             localStorage.setItem("order_id",data.order_id)
-            alert("Product Added")
-          window.location.href=data.url
+          //   alert("Product Added")
+          // window.location.href=data.url
         }
     });
 }

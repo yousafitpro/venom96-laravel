@@ -13,9 +13,11 @@ class OrderProductController extends Controller
 {
     public function addToCart(Request $request,$id)
     {
+
         $order_id=null;
         if ($request->order_id==null)
         {
+
             $no=new order();
             $no->user_id=auth()->user()->id;
             $no->save();
@@ -23,16 +25,20 @@ class OrderProductController extends Controller
         }
         else
         {
+
             $order_id=$request->order_id;
+
         }
+
         $product=product::find($id);
         $op=null;
-        if (orderProduct::where("user_id",auth()->user()->id)
-            ->where('order_id',$order_id)
-            ->where('product_id',$id)->exists()
-        )
+
+        if (orderProduct::where("user_id",auth()->user()->id)->where('order_id',$order_id)->where('product_id',$id)->exists())
         {
-           $op=orderProduct::find($id);
+
+           $op=orderProduct::where('product_id',$id)->first();
+
+
         }
         else
         {
@@ -40,11 +46,14 @@ class OrderProductController extends Controller
         }
 
         $op->order_id=$order_id;
+
         $op->user_id=auth()->user()->id;
+
         $op->product_id=$id;
         $op->price=$product->price;
         $op->save();
-        Session::put('success-msg','product Successfully Added');
+
+
         return response()->json(['order_id'=>$order_id,'url'=>route('home.cart',$order_id)]);
     }
     public function cart(Request $request,$id)

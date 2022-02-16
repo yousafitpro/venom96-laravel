@@ -8,6 +8,10 @@
         <li><a href="#">Contact Us</a></li>
         <li><a href="#">Payment Methods</a></li>
         <li style="float:right"><a class="" href="#about"><span style="color: black; font-weight: bold">English/USD</span></a></li>
+
+@if(auth()->check())
+            <li style="float:right"><a >( {{auth()->user()->fname." ".auth()->user()->lname}} )</a></li>
+    @endif
     </ul>
 
 </div>

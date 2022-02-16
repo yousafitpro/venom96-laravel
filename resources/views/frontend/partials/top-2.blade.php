@@ -15,18 +15,34 @@
             <img  src="{{asset('myimages/userplus.png')}}">
         </div>
         <div style="width: 10%;  float: left;" class="myflex top2-signuplogin">
-            <img  src="{{asset('myimages/userplus.png')}}">
+
             <?php
             $baseUrl="https://sneakcrm.com/venom96-laravel/";
             ?>
-             <span style="color:gray; font-weight:bold; text-align: right">
+@if(!auth()->check())
+                    <img  src="{{asset('myimages/userplus.png')}}">
+                <span style="color:gray; font-weight:bold; text-align: right">
                  <a  href="{{$baseUrl}}login" class=" " style="float: right; color: gray">Login/</a>
 </span>
-            <span style="color:gray; font-weight:bold; text-align: right">
+                <span style="color:gray; font-weight:bold; text-align: right">
                  <a  href="{{$baseUrl}}register" class=" " style="float: right; color: gray">Signup</a>
              </span>
+                @else
+
+
+
+                    <span style="color:gray; font-weight:bold; text-align: right">
+                 <a  href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class=" " style="float: right; color: gray">Logout</a>
+             </span>
+
+    @endif
+
+
         </div>
     </div>
 
 </div>
 
+<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+    {{ csrf_field() }}
+</form>
