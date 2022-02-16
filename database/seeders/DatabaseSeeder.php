@@ -30,6 +30,18 @@ class DatabaseSeeder extends Seeder
         $user->profile_image="1.png";
         $user->save();
 
+        $user=new User();
+        $user->fname="Muhammad";
+        $user->lname="Yousaf";
+        $user->phone="+923417414093";
+        $user->type="user";
+        $user->status="1";
+        $user->address="here will be the address";
+        $user->email="user@gmail.com";
+        $user->password=bcrypt('12345678');
+        $user->profile_image="1.png";
+        $user->save();
+
         $role=new role();
         $role->user_id="1";
         $role->name="User";

@@ -32,7 +32,7 @@
                 <div class="title"> Price </div>
                 <div class="currency">
                   <span class="price">
-                    <b class="balance">{{$product->pr}} </b>
+                    <b class="balance">{{$product->price}} </b>
                   </span>
                   / 100m
                 </div>
