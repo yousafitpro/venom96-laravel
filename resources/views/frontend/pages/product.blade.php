@@ -556,8 +556,8 @@ function addToCart()
         success: function (data) {
             console.log(data.order_id)
             localStorage.setItem("order_id",data.order_id)
-          //   alert("Product Added")
-          // window.location.href=data.url
+            alert("Product Added")
+          window.location.href=data.url
         }
     });
 }

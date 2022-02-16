@@ -10,3 +10,4 @@ Route::get('product-list/{id}',[App\Http\Controllers\myhomeController::class, 'p
 
 Route::middleware('auth')->post('product/addToCart/{id}',[App\Http\Controllers\OrderProductController::class, 'addToCart'])->name('home.addToCart');
 Route::get('cart/{id}',[App\Http\Controllers\OrderProductController::class, 'cart'])->name('home.cart');
+Route::get('removeCartProduct/{id}',[App\Http\Controllers\OrderProductController::class, 'removeProduct'])->name('home.removeProduct');

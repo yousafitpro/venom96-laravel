@@ -119,9 +119,9 @@
                                                 <div class="quantity_box">
                                                 <label class="quantity_wrp cpt-quantity" quantity="140">
                                                     <div class="qty">
-                                                        <span onclick="minus('quntity{{$p->id}}')" class="minus" >-</span>
-                                                        <input id="quntity{{$p->id}}" type="number" class="count" name="qty" value="{{$p->quantity}}">
-                                                        <span class="plus" onclick="add('quntity{{$p->id}}')">+</span>
+{{--                                                        <span onclick="minus('quntity{{$p->id}}')" class="minus" >-</span>--}}
+                                                        <input readonly id="quntity{{$p->id}}" type="number" class="count" name="qty" value="{{$p->quantity}}">
+{{--                                                        <span class="plus" onclick="add('quntity{{$p->id}}')">+</span>--}}
                                                     </div>
                                                 </label>
                                                 </div>
@@ -137,7 +137,8 @@
                             </div>
                             <div class="function">
                                 <span>
-                                    <i class="fa-solid fa-trash"></i>
+                                    <a href="{{route('home.productDetails1',$p->product->id)}}"><i class="fa-solid fa-pencil"></i></a>
+                                    <a href="{{route('home.removeProduct',$p->id)}}">  <i class="fa-solid ml-2 fa-trash"></i></a>
                                 </span>
                             </div>
                         </li>

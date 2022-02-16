@@ -72,4 +72,9 @@ class OrderProductController extends Controller
 //        dd($products);
         return view('frontend.pages.cart',['products'=>$products,'total'=>$total]);
     }
+    public function removeProduct($id)
+    {
+        orderProduct::where('id',$id)->delete();
+        return redirect()->back();
+    }
 }
