@@ -59,7 +59,9 @@
               <div class="item_purchase">
                 <div class="inner">
                   <div class="form-style-2">
-                    <form action="" method="post">
+
+
+                        @csrf
                       <ul>
                         <li>
                           <div class="label">Quantity</div>
@@ -148,16 +150,16 @@
                                       Total Price
                                   </div>
                                   <div class="currency">
-                                      US$ 1.58
+                                      {{$product->price}}
                                   </div>
                                 </li>
                               </ul>
                         </div>
                         <div class="cart_btn">
-                            <label><button class="btn btn-primary" type="submit"><i class='fa fa-cart-arrow-down'></i>Add To Cart</button></label>
+                            <label><button onclick="addToCart()" class="btn btn-primary" ><i class='fa fa-cart-arrow-down'></i>Add To Cart</button></label>
                         </div>
                       </div>
-                    </form>
+
                   </div>
                 </div>
               </div>
@@ -171,7 +173,7 @@
                   <div class="inner">
                     <div class="form-style-2">
                       <label for="" data-dismiss="modal" class=" close fa-lg">&times;</label>
-                      <form action="" method="post">
+
                         <ul>
                           <li>
                             <div class="label">Quantity</div>
@@ -266,10 +268,10 @@
                                 </ul>
                           </div>
                           <div class="cart_btn">
-                              <label><button class="btn btn-primary" type="submit">Add To Cart</button></label>
+                              <label><button onclick="addToCart()" class="btn btn-primary">Add To Cart</button></label>
                           </div>
                         </div>
-                      </form>
+
                     </div>
                   </div>
                 </div>
@@ -530,7 +532,28 @@
 
 <script>
 
+function addToCart()
+{
 
+    var order_id=null;
+    var product_id="{{$product->id}}";
+    if (localStorage.getItem("order_id"))
+    {
+        order_id=localStorage.getItem("order_id")
+    }
+    $.ajax({
+        type: 'post',
+        url: "{{route('home.addToCart',$product->id)}}",
+        data: {"_token": "{{ csrf_token() }}",
+        order_id,product_id
+        },
+        success: function (data) {
+            localStorage.setItem("order_id",data.order_id)
+            alert("Product Added")
+          window.location.href=data.url
+        }
+    });
+}
 
   function closePopup(){
    $('.modal-window').css('display','none');
@@ -548,7 +571,7 @@
     if($(".content:hidden").length == 0) {
       $("#loadMore").text(" ").addClass("noContent");
     }
-  }
+  })
 }
 
 

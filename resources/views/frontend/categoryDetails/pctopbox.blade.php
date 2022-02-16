@@ -95,50 +95,74 @@
             <div class="card">
                 <div class="card-body">
                     <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-1">
-                                <img src="{{asset('images/defaultProduct.png')}}">
-                            </div>
-                            <div class="col-5">
-                                <a href="#" style="font-weight: bold">
-                                    Fast Dragon Nest SEA Gold (Reef) 【100% Clean Gold】~ ( ´◕㉨◕） ◆ Instant Delivery ◆ Online Now
-                                </a>
-                            </div>
-                            <div class="col-3">
-                                <div style="text-align: center">
-                                <small style="color: red; font-weight: bold">US$ 5.93</small>
-                                <small  >/ 100k Gold</small>
+                      @foreach($products as $p)
+                            <div class="row">
+                                <div class="col-1">
+                                    <img src="{{$p->image_url}}" style="width: 60px">
                                 </div>
-                       <div style="text-align: center">
-                           <small style="color: gray;  font-weight: bold">US$ 1.00 = 16888.3515 Gold</small>
-                       </div>
-                                <div style="text-align: center">
-                                <small style="color: gray;  font-weight: bold">Stock: 950 Trading volume: 502</small>
+                                <div class="col-5">
+                                    <a href="#" style="font-weight: bold">
+                                        {{$p->name}}
+                                    </a>
+                                </div>
+                                <div class="col-3">
+                                    <div style="text-align: center">
+                                        <small style="color: red; font-weight: bold">{{$p->price}}</small>
+                                        <small  >/ 100k Gold</small>
+                                    </div>
+                                    <div style="text-align: center">
+                                        <small style="color: gray;  font-weight: bold">US$ 1.00 = 16888.3515 Gold</small>
+                                    </div>
+                                    <div style="text-align: center">
+                                        <small style="color: gray;  font-weight: bold">Stock: 950 Trading volume: 502</small>
 
+                                    </div>
                                 </div>
-                                </div>
-                            <div class="col-3">
-                                <div style="text-align: center; ">
-                                    <small style="font-weight: bold">cutecuteinu</small>
-                                </div>
-                                <div style="width: 100%; height: 30px" class="myflex">
-                                    <img src="{{asset('images/diamand.png')}}">
-                                    <img src="{{asset('images/diamand.png')}}">
-                                    <img src="{{asset('images/diamand.png')}}">
-                                    <img src="{{asset('images/diamand.png')}}">
-                                </div>
-                                <div style="width: 100%; height: 30px" class="myflex">
-                                    <img src="{{asset('images/comment.png')}}">
-                                    <small style="font-weight: bold; color: gray">
+                                <div class="col-3">
 
-                                    Chat with seller
-                                    </small>
+                                    <div style="width: 100%; height: 30px" class="myflex">
+                                        <img src="{{asset('images/diamand.png')}}">
+                                        <img src="{{asset('images/diamand.png')}}">
+                                        <img src="{{asset('images/diamand.png')}}">
+                                        <img src="{{asset('images/diamand.png')}}">
+                                    </div>
+                                    <br>
+                                    <div style="width: 100%; height: 30px" class="myflex">
+                                        <a href="{{route('home.productDetails',$p->id)}}">
+                                            <button  class="btn btn-primary">Add To Cart</button>
+                                        </a>
+
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<script>
+    function addToCart(url)
+    {
+
+        var order_id=null;
+        {{--var product_id="{{$product->id}}";--}}
+        if (localStorage.getItem("order_id"))
+        {
+            order_id=localStorage.getItem("order_id")
+        }
+
+        $.ajax({
+            type: 'post',
+            url: url,
+            data: {"_token": "{{ csrf_token() }}"
+            },
+            success: function (data) {
+                localStorage.setItem("order_id",data.order_id)
+                alert("Product Added")
+                // window.location.href=data.url
+            }
+        });
+    }
+</script>

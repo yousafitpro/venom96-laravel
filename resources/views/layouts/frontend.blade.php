@@ -1,3 +1,7 @@
+
+<?php
+$url="";
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,8 +13,12 @@
     <link rel="stylesheet" href="{{asset('frontend/css/style.css')}}">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Toastr style -->
+    <link href="{{ asset($url.'backend-theme/css/plugins/toastr/toastr.min.css')}}" rel="stylesheet">
 
 </head>
+<!-- Toastr -->
+<script src="{{ asset($url.'backend-theme/js/plugins/toastr/toastr.min.js')}}"></script>
 <body style="overflow-x: hidden">
 @include('frontend.partials.top-1')
 @include('frontend.partials.top-2')

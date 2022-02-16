@@ -16,6 +16,9 @@ class CreateOrdersTable extends Migration
         Schema::dropIfExists('orders');
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger("user_id");
+            $table->string("status")->default('Draft');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

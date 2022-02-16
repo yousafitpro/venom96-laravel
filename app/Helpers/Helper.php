@@ -15,4 +15,9 @@ class Helper extends Controller
        return product::where('deleted_at',null)->get();
 
    }
+    public static function GameProducts($id)
+    {
+        return product::where('deleted_at',null)->where('category_id',$id)->get();
+
+    }
 }

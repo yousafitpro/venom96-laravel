@@ -9,7 +9,7 @@
                 <div class="col-md-2">
                     <div class="container">
                         <div id="game_cover">
-                            <div class="cover"><img class="GamePic" alt="Final Fantasy XIV" src="{{asset('images/product.webp')}}"></div>
+                            <div class="cover"><img class="GamePic" alt="Final Fantasy XIV" src="{{$item->image_url}}"></div>
                         </div>
                     </div>
                 </div>
@@ -21,7 +21,7 @@
                             <li><span>PC</span></li>
                             <li><span class="publisher">Square Enix</span></li>
                         </ul>
-                    </div>    
+                    </div>
                 </div>
                 <div class="col-md-3"></div>
                 <div class="col-md-3">
@@ -83,7 +83,7 @@
                                         <option value="C++">C++</option>
                                         <option value="erlang">Erlang</option>
                                       </select>
-                                 </div>  
+                                 </div>
                              </div>
                         </div>
                         <div class="col-md-4"></div>
@@ -123,16 +123,16 @@
                          <div class="status">
                             <div class="dropdown_ctrl sort_ctrl" icon="keyboard_arrow_down"><span>Show Seller</span><i class="fa fa-angle-down"></i></div>
                              <ul class="tabs dropdown">
-                                <li>
-                                    <div class="premium_seller_ctrl on" id="premium_seller_filter">
-                                        <span icon="recommend"><b>Premium Seller</b></span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="online_seller_ctrl">
-                                        <span icon="3p">Online Seller</span>
-                                    </div>
-                                </li>
+{{--                                <li>--}}
+{{--                                    <div class="premium_seller_ctrl on" id="premium_seller_filter">--}}
+{{--                                        <span icon="recommend"><b>Premium Seller</b></span>--}}
+{{--                                    </div>--}}
+{{--                                </li>--}}
+{{--                                <li>--}}
+{{--                                    <div class="online_seller_ctrl">--}}
+{{--                                        <span icon="3p">Online Seller</span>--}}
+{{--                                    </div>--}}
+{{--                                </li>--}}
                              </ul>
                          </div>
                     </div>
@@ -145,126 +145,50 @@
                         <div class="pager">
                             <a href="?page=1" class="btw pre disabled" color="transparent"><span class="fa fa-angle-left"></span></a>
                             <span class="pager_count"><i class="page_title">Page</i> <i class="current_page">2</i> / <i class="total_page">7</i></span>
-                            <a href="?page=3" data-page="7" class="btw next" color="transparent"><span class="fa fa-angle-right"></span></a> 
+                            <a href="?page=3" data-page="7" class="btw next" color="transparent"><span class="fa fa-angle-right"></span></a>
                         </div>
                     </div>
                 </div>
-            </div>        
+            </div>
               <ol class="list list-view-filter">
-                <li>
-                    <div class="item_list " data-item-count="156">
-                        <div class="unit" data-stock="100" data-seller-status="pro_seller" data-store-status="">
-                            <div class="cell tit">
-                            <div class="img_wrp">
-                                <a href="https://www.kaleoz.com/buy/ffxiv-a-realm-reborn/182742" target="_blank" eventlabel="Cheap Final Fantasy XIV Gil in NA Hyperion Server on Sale"><img class="ItemPic" alt="Cheap Final Fantasy XIV Gil in NA Hyperion Server on Sale" src="{{asset('images/product.webp')}}"></a>
-                            </div>
-                            <dl>
-                                <dt>
-                                <a href="https://www.kaleoz.com/buy/ffxiv-a-realm-reborn/182742" target="_blank" eventlabel="Cheap Final Fantasy XIV Gil in NA Hyperion Server on Sale">Cheap Final Fantasy XIV Gil in NA Hyperion Server on Sale</a>
-                                </dt>
-                                <dd> Server Group: North American - Primal Server: NA - Hyperion</dd>
-                            </dl>
-                            </div>
-                            <div class="cell pri">
-                                <ul>
-                                    <li class="price"><b class="user-balance">US$ 10.62</b> / 5m Gil</li>
-                                    <li class="unitprice"><b class="user-balance">US$ 1.00</b> = 470349.9494 Gil</li>
-                                    <li class="stock">Stock: 100</li>
-                                    <li class="trade">Trading volume: 0</li>
-                                </ul>
-                            </div>
-                            <div class="cell sel">
-                                <ul>
-                                    <li class="seller"><a href="https://www.kaleoz.com/seller/info?seller_id=1226154" target="_blank" class="name"><i class="fa fa-thumbs-up"></i>Umai007</a></li>
-                                    <li class="level"><div data-level="crown-Lv2" class="user-level">
-                                        <i class="fa fa-crown"></i>
-                                        <i class="fa fa-crown"></i>
-                                    </li>
-                                    <li class="chat">
-                                      <i class="fa-solid fa-message"></i>
-                                      <span>Chat with seller</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>   
-                </li>
-                <li>
-                    <div class="item_list" data-item-count="156">
-                        <div class="unit" data-stock="100" data-seller-status="pro_seller" data-store-status="">
-                            <div class="cell tit">
-                            <div class="img_wrp">
-                                <a href="https://www.kaleoz.com/buy/ffxiv-a-realm-reborn/182742" target="_blank"><img class="ItemPic" alt="Cheap Final Fantasy XIV Gil in NA Hyperion Server on Sale" src="{{asset('images/product.webp')}}"></a>
-                            </div>
-                            <dl>
-                                <dt>
-                                <a href="https://www.kaleoz.com/buy/ffxiv-a-realm-reborn/182742" target="_blank" eventlabel="Cheap Final Fantasy XIV Gil in NA Hyperion Server on Sale">Cheap Final Fantasy XIV Gil in NA Hyperion Server on Sale</a>
-                                </dt>
-                                <dd> Server Group: North American - Primal </dd>
-                                <dd> Server: NA - Hyperion </dd>
-                            </dl>
-                            </div>
-                            <div class="cell pri">
-                                <ul>
-                                    <li class="price"><b class="user-balance">US$ 10.62</b> / 5m Gil</li>
-                                    <li class="unitprice"><b class="user-balance">US$ 1.00</b> = 470349.9494 Gil</li>
-                                    <li class="stock">Stock: 100</li>
-                                    <li class="trade">Trading volume: 0</li>
-                                </ul>
-                            </div>
-                            <div class="cell sel">
-                                <ul>
-                                    <li class="seller"><a href="https://www.kaleoz.com/seller/info?seller_id=1226154" target="_blank" class="name"><i class="fa fa-thumbs-up"></i>Umai007</a></li>
-                                    <li class="level"><div data-level="crown-Lv2" class="user-level">
-                                        <i class="fa fa-crown"></i>
-                                        <i class="fa fa-crown"></i>
-                                    </li>
-                                    <li class="chat">
-                                    <span><i class="fa-solid fa-message"></i>Chat with seller</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>   
-                </li>
-                <li>
-                    <div class="item_list" data-item-count="156">
-                        <div class="unit" data-stock="100" data-seller-status="pro_seller" data-store-status="">
-                            <div class="cell tit">
-                            <div class="img_wrp">
-                                <a href="https://www.kaleoz.com/buy/ffxiv-a-realm-reborn/182742" target="_blank" eventlabel="Cheap Final Fantasy XIV Gil in NA Hyperion Server on Sale"><img class="ItemPic" alt="Cheap Final Fantasy XIV Gil in NA Hyperion Server on Sale" src="{{asset('images/product.webp')}}"></a>
-                            </div>
-                            <dl>
-                                <dt>
-                                <a href="https://www.kaleoz.com/buy/ffxiv-a-realm-reborn/182742" target="_blank" eventlabel="Cheap Final Fantasy XIV Gil in NA Hyperion Server on Sale">Cheap Final Fantasy XIV Gil in NA Hyperion Server on Sale</a>
-                                </dt>
-                                <dd> Server Group: North American - Primal </dd>
-                                <dd> Server: NA - Hyperion </dd>
-                            </dl>
-                            </div>
-                            <div class="cell pri">
-                                <ul>
-                                    <li class="price"><b class="user-balance">US$ 10.62</b> / 5m Gil</li>
-                                    <li class="unitprice"><b class="user-balance">US$ 1.00</b> = 470349.9494 Gil</li>
-                                    <li class="stock">Stock: 100</li>
-                                    <li class="trade">Trading volume: 0</li>
-                                </ul>
-                            </div>
-                            <div class="cell sel">
-                                <ul>
-                                    <li class="seller"><a href="https://www.kaleoz.com/seller/info?seller_id=1226154" target="_blank" class="name"><i class="fa fa-thumbs-up"></i>Umai007</a></li>
-                                    <li class="level"><div data-level="crown-Lv2" class="user-level">
-                                        <i class="fa fa-crown"></i>
-                                        <i class="fa fa-crown"></i>
-                                    </li>
-                                    <li class="chat">
-                                    <span><i class="fa-solid fa-message"></i>Chat with seller</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>   
-                </li>
+              @foreach($products as $p)
+                      <li>
+                          <div class="item_list " data-item-count="156">
+                              <div class="unit" data-stock="100" data-seller-status="pro_seller" data-store-status="">
+                                  <div class="cell tit">
+                                      <div class="img_wrp">
+                                          <a href="https://www.kaleoz.com/buy/ffxiv-a-realm-reborn/182742" target="_blank" eventlabel="Cheap Final Fantasy XIV Gil in NA Hyperion Server on Sale"><img class="ItemPic" alt="Cheap Final Fantasy XIV Gil in NA Hyperion Server on Sale" src="{{$p->image_url}}"></a>
+                                      </div>
+                                      <dl>
+                                          <dt>
+                                              <a href="https://www.kaleoz.com/buy/ffxiv-a-realm-reborn/182742" target="_blank" eventlabel="Cheap Final Fantasy XIV Gil in NA Hyperion Server on Sale">{{$p->name}}</a>
+                                          </dt>
+                                          <dd> Server Group: North American - Primal Server: NA - Hyperion</dd>
+                                      </dl>
+                                  </div>
+                                  <div class="cell pri">
+                                      <ul>
+                                          <li class="price"><b class="user-balance">{{$p->price}}</b> / 5m Gil</li>
+                                          <li class="unitprice"><b class="user-balance">US$ 1.00</b> = 470349.9494 Gil</li>
+                                          <li class="stock">Stock: 100</li>
+                                          <li class="trade">Trading volume: 0</li>
+                                      </ul>
+                                  </div>
+                                  <div class="cell sel">
+                                      <ul>
+
+                                          <li class="chat">
+                                              <a href="{{route('home.productDetails1',$p->id)}}">
+                                                  <button  class="btn btn-primary">Add To Cart</button>
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                  @endforeach
+
               </ol>
            </div>
         </div>
@@ -272,30 +196,30 @@
             <div class="row">
                 <div class="col-md-5">
                     <div class="video">
-                        <div class="youtube-player"> 
+                        <div class="youtube-player">
                             <video controls="controls" src="https://youtu.be/X9Ssx9AXYk4">
-                            </video>                        
+                            </video>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-7">
                     <div class="intro">
                             <article>
-                                <h2>About Final Fantasy XIV</h2>
+                                <h2>About Final Fantasy XIV-0</h2>
                                 <div>
                                     <b>Final Fantasy XIV FF14</b> has come a long way since its
                                     rather rough initial release, but the long grind of gathering
                                     FFXIV Gil is one thing that hasn't changed. Obtaining FF14 Gil
-                                    takes a lot of time -- time that could otherwise be spent 
+                                    takes a lot of time -- time that could otherwise be spent
                                     enjoying some of the game's content. With the release of four
-                                    major expansion packs: Heavensward (2015), Stormblood (2017), 
+                                    major expansion packs: Heavensward (2015), Stormblood (2017),
                                     Shadowbringers (2019), and Endwalker (2021).<p>There are plenty
                                     of places to choose from, but here at KALEOZ.com, we offer
                                     the best value and prices for those looking to purchase
                                     FFXIV Gil. In FF14, in-game currency is required for buying
                                     supplies, equipment and -- most importantly -- crafting. FFXIV
                                     Gil is especially needed in large amounts when purchasing
-                                    or creating higher tier items. KALEOZ.com provides a simple and 
+                                    or creating higher tier items. KALEOZ.com provides a simple and
                                     affordable way to buy FFXIV Gil.<p>
                                 </div>
                             </article>

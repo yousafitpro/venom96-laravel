@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Helpers\Helper;
 use App\Models\category;
 use App\Models\product;
 use Illuminate\Http\Request;
@@ -11,7 +12,8 @@ class myhomeController extends Controller
     public function gameDetails($id)
     {
         $cate=category::find($id);
-        return view('frontend.pages.gamedetails')->with(['item'=> $cate]);
+        $products=Helper::GameProducts($id);
+        return view('frontend.pages.gamedetails',['item'=> $cate,'products'=>$products]);
     }
     public function index()
     {
@@ -19,6 +21,7 @@ class myhomeController extends Controller
     }
     public function productDetails($id)
     {
+
         $product=product::find($id);
         return view('frontend.pages.product',['product'=>$product]);
     }
@@ -28,6 +31,8 @@ class myhomeController extends Controller
     }
     public function productList($id)
     {
-        return view('frontend.pages.product-list');
+        $cate=category::find($id);
+        $products=Helper::GameProducts($id);
+        return view('frontend.pages.product-list',['item'=> $cate,'products'=>$products]);
     }
 }

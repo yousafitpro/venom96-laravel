@@ -1,4 +1,4 @@
-<a href="{{route('home.gameDetails',$id)}}">
+<a href="{{route('home.productDetails',$id)}}">
 <div class="{{isset($next)?$next:'item'}}" style="{{isset($styles)?$styles:''}}" >
     <div   class="gameCard" style="{{isset($isfirst)?'margin-left:0px':''}}"  >
         <div>
