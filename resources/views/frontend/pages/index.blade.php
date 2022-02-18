@@ -93,7 +93,7 @@
                          <?php
                          $products=\App\Helpers\Helper::Products();
                          ?>
-                         @include('frontend.inc.gameitem',['imageurl'=>asset('myimages/gt.png'),'title'=>$products[0]->name,'price'=>$products[0]->price,'user'=>$products[0]->id])
+                         @include('frontend.inc.gameitem',['imageurl'=>$products[0]->image_url,'title'=>$products[0]->name,'price'=>$products[0]->price,'user'=>$products[0]->id])
 
                          @foreach($products as $pg)
                              @if($loop->index>0)
