@@ -116,14 +116,17 @@
              <div class="card">
                  <div class="card-body">
                      <div class="myitemGamecontainer">
-                         @include('frontend.inc.gameitem',['imageurl'=>asset('myimages/gt.png'),'title'=>"mpact 3 fast and cheap Only",'price'=>'US$16.95/500m Alz','user'=>'TopUpMaster'])
-                         @include('frontend.inc.gameitem',['imageurl'=>asset('myimages/gt.png'),'title'=>"mpact 3 fast and cheap Only",'price'=>'US$16.95/500m Alz','user'=>'TopUpMaster'])
+                         <?php
+                         $products=\App\Helpers\Helper::Products();
+                         ?>
+                         @include('frontend.inc.gameitem',['imageurl'=>asset('myimages/gt.png'),'title'=>$products[0]->name,'price'=>$products[0]->price,'user'=>$products[0]->id])
 
-                         @include('frontend.inc.gameitem',['imageurl'=>asset('myimages/gt.png'),'title'=>"mpact 3 fast and cheap Only",'price'=>'US$16.95/500m Alz','user'=>'TopUpMaster'])
-                         @include('frontend.inc.gameitem',['imageurl'=>asset('myimages/gt.png'),'title'=>"mpact 3 fast and cheap Only",'price'=>'US$16.95/500m Alz','user'=>'TopUpMaster'])
-                         @include('frontend.inc.gameitem',['imageurl'=>asset('myimages/gt.png'),'title'=>"mpact 3 fast and cheap Only",'price'=>'US$16.95/500m Alz','user'=>'TopUpMaster'])
+                         @foreach($products as $pg)
+                             @if($loop->index>0)
+                                 @include('frontend.inc.gameitem',['imageurl'=>$pg->image_url,'title'=>$pg->name,'price'=>$pg->price,'id'=>$pg->id,'user'=>$pg->id])
 
-                         @include('frontend.inc.gameitem',['imageurl'=>asset('myimages/gt.png'),'title'=>"mpact 3 fast and cheap Only",'price'=>'US$16.95/500m Alz','user'=>'TopUpMaster'])
+                             @endif
+                         @endforeach
 
 
                      </div>
