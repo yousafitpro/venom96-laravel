@@ -157,7 +157,7 @@
                               <div class="unit" data-stock="100" data-seller-status="pro_seller" data-store-status="">
                                   <div class="cell tit">
                                       <div class="img_wrp">
-                                          <a href="https://www.kaleoz.com/buy/ffxiv-a-realm-reborn/182742" target="_blank" eventlabel="Cheap Final Fantasy XIV Gil in NA Hyperion Server on Sale"><img class="ItemPic" alt="Cheap Final Fantasy XIV Gil in NA Hyperion Server on Sale" src="{{$p->image_url}}"></a>
+                                          <a href="https://www.kaleoz.com/buy/ffxiv-a-realm-reborn/182742" target="_blank" eventlabel="Cheap Final Fantasy XIV Gil in NA Hyperion Server on Sale"><img class="ItemPic" alt="Cheap Final Fantasy XIV Gil in NA Hyperion Server on Sale" src="{{$p->image_url}}" ></a>
                                       </div>
                                       <dl>
                                           <dt>
