@@ -54,7 +54,17 @@ html {
 .slider-container {
   overflow-y: hidden;
 }
-
+.slider-nav-round .slider-nav::before, .slider-nav-square .slider-nav::before {
+  background-color: #1E90FF;
+  color: white;
+}
+.slider-nav-round .slider-nav::after, .slider-nav-square .slider-nav::after {
+  background-color: #1E90FF;
+  color: white;
+}
+.slider-nav-round .slider-nav::after, .slider-nav-square .slider-nav::after {
+  background-color: white;
+}
 /***************** Top Header **************/
 .maintop1{
   background: #f8f8f8;
