@@ -48,24 +48,9 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-.slider{
-  padding-top: 100px;
-}
-.slider-container {
-  overflow-y: hidden;
-}
-.slider-nav-round .slider-nav::before, .slider-nav-square .slider-nav::before {
-  background-color: #1E90FF;
-  color: white;
-}
-.slider-nav-round .slider-nav::after, .slider-nav-square .slider-nav::after {
-  background-color: #1E90FF;
-  color: white;
-}
-.slider-nav-round .slider-nav::after, .slider-nav-square .slider-nav::after {
-  background-color: white;
-}
+
 /***************** Top Header **************/
+
 .maintop1{
   background: #f8f8f8;
   padding: 0 40px;
@@ -102,6 +87,24 @@ html {
 
 /***************** Main Header **************/
 
+/***************** Slider **************/
+.slider{
+  padding-top: 100px;
+}
+.slider-container {
+  overflow-y: hidden;
+}
+.slider-nav-round .slider-nav::before, .slider-nav-square .slider-nav::before {
+  background-color: #1E90FF;
+  color: white;
+}
+.slider-nav-round .slider-nav::after, .slider-nav-square .slider-nav::after {
+  background-color: #1E90FF;
+  color: white;
+}
+.slider-nav-round .slider-nav::after, .slider-nav-square .slider-nav::after {
+  background-color: white;
+}
 
 
 /***************** Game Categories **************/
