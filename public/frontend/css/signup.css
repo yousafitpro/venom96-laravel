@@ -125,13 +125,6 @@
     text-align: center;
     font-weight: 500;
 }
-#login_form p {
-    font-size: 12px !important;
-    margin: 0 0 1em !important;
-    font-weight: 400 !important;
-    justify-content: center;
-    opacity: .7 !important;
-}
 #login_form_accounts h3 {
     font-size: 1em !important;
     margin: 0 0 1em !important;
@@ -157,7 +150,7 @@
     flex: 1;
     padding: 4em;
     background-color: #7184d0;
-    background-image: linear-gradient(315deg,hsl(210 100% 50%/0%),hsl(210 100% 50%/60%)),url("../../images/signup-left.PNG");
+    background-image: linear-gradient(315deg,hsl(210 100% 50%/0%),hsl(210 100% 50%/60%)),url(https://seagm-media.seagmcdn.com/member/art/bg_0.jpg!webp);
     background-repeat: no-repeat;
     background-position: center,center;
     background-size: cover;
@@ -177,54 +170,34 @@
 .create_account p {
     font-size: 1em;
 }
-#login_form .btw {
+.create_account .btw {
     display: block;
     font-size: 1.166667em;
     font-weight: 700;
 }
-#login_form .btw{
-    background-color: #1E90FF;
+.create_account .btw{
+    background-color: rgba(154, 205, 50, 1);
     outline: none;
     border: none;
     color: white;
-    border-radius: 5px;
-    padding: 10px 10px;
+    padding: 5px 10px;
     width: 100%;
 }
-#login_form .btw a{
+.create_account .btw a{
    text-decoration: none;
    color: white;
    font-size: 14px;
 }
-.reg_steps {
-    margin: 2em -41px;
+.bottom_img a{
+        display: block;
+        text-align: center;
+        margin: 2em auto;
+        max-width: 30em;
 }
-.reg_steps>li {
-    counter-increment: step;
-    margin: 1em 0;
-    list-style: none;
-}
-.reg_steps>li>div {
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    vertical-align: middle;
-}
-.reg_steps>li>div:before {
-    content: counter(step);
-    display: block;
-    font-size: 2em;
-    width: 1.5em;
-    height: 1.5em;
-    line-height: 1.5;
-    overflow: hidden;
-    text-align: center;
-    border-radius: 25%;
-    background: rgba(255 255 255/10%);
-    font-weight: 700;
-    margin-right: 0.5em;
-    flex: none;
-    align-self: flex-start;
+.bottom_img img{
+        vertical-align: top;
+        width: calc(100% - 2em);
+        border-radius: 1em;
 }
  
 

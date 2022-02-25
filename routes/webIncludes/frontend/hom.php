@@ -6,3 +6,6 @@ Route::get('/front',function (){
 Route::get('/signin',function (){
     return view('myfrontend.pages.login');
 });
+Route::get('/signup',function (){
+    return view('myfrontend.pages.signup');
+});
