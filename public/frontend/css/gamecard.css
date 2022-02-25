@@ -1,0 +1,39 @@
+.game_card a {
+    display: block;
+    color: currentColor;
+    text-decoration: none;
+    text-align: center;
+}
+.game_card .cover {
+    width: 120px;
+    height: 160px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 0.5em;
+    overflow: hidden;
+    box-shadow: rgb(0 0 0 / 10%) 0 0.25em 0.5em, rgb(0 0 0 / 5%) 0 0 0 1px;
+    background: #fff;
+}
+.game_card .cover img {
+    width: 120px !important;
+    height: 160px !important;
+    vertical-align: top;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: .3s;
+    transition: transform .5s ease;
+}
+.game_card .cover:hover img {
+    transform: scale(1.1);
+}
+.game_card .info {
+    margin-top: 1em;
+}
+.game_card .info b {
+    display: block;
+    margin: 0 1em;
+}

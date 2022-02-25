@@ -1,7 +1,7 @@
 
 
 
-<div class="footer" style="padding: 10px" >
+<div class="container" style="padding: 10px" >
     <br>
     <br>
     <br>
