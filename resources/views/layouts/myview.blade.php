@@ -7,8 +7,7 @@
     @include('myfrontend.inc.css')
 </head>
 <body>
-@include('myfrontend.inc.topbar')
-@include('myfrontend.inc.topbar2')
+
 @yield('content')
 @include('myfrontend.inc.footer')
 

@@ -1,4 +1,4 @@
-@extends('layouts.myfrontend')
+@extends('layouts.myview')
 @section('content')
 
      <div class="container-fluid wrapc">
@@ -11,7 +11,7 @@
                 </div>
                 <div class="login_tiger">
                     <div class="tiger">
-                        
+
                     </div>
                 </div>
             </div>
@@ -92,6 +92,6 @@
     </div>
 
 
-    
 
- @endsection   
+
+ @endsection

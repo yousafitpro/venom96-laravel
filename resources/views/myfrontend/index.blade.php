@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="container">
-      
+
         <div class="slider">
              @include("myfrontend.inc.slider")
         </div>
@@ -13,19 +13,19 @@
                         <h3><span>Popular Mobile Games</span></h3>
                         <ul class="list">
                                 <li>
-                                        @include("myfrontend.inc.gamecard")    
+                                        @include("myfrontend.inc.gamecard")
                                 </li>
                                 <li>
-                                        @include("myfrontend.inc.gamecard")    
+                                        @include("myfrontend.inc.gamecard")
                                 </li>
                                 <li>
-                                        @include("myfrontend.inc.gamecard")    
+                                        @include("myfrontend.inc.gamecard")
                                 </li>
                                 <li>
-                                        @include("myfrontend.inc.gamecard")    
+                                        @include("myfrontend.inc.gamecard")
                                 </li>
                                 <li>
-                                        @include("myfrontend.inc.gamecard")    
+                                        @include("myfrontend.inc.gamecard")
                                 </li>
                         </ul>
                         </div>
@@ -33,48 +33,48 @@
                         <h3><span>Popular PC Games</span></h3>
                         <ul class="list">
                         <li>
-                                @include("myfrontend.inc.gamecard")    
+                                @include("myfrontend.inc.gamecard")
                         </li>
                         <li>
-                                @include("myfrontend.inc.gamecard")    
+                                @include("myfrontend.inc.gamecard")
                         </li>
                         <li>
-                                @include("myfrontend.inc.gamecard")    
+                                @include("myfrontend.inc.gamecard")
                         </li>
                         <li>
-                                @include("myfrontend.inc.gamecard")    
+                                @include("myfrontend.inc.gamecard")
                         </li>
                         <li>
-                                @include("myfrontend.inc.gamecard")    
+                                @include("myfrontend.inc.gamecard")
                         </li>
                         </ul>
                         </div>
                 </div>
         </div>
-   
+
         <div class="new_games">
                <div class="inner">
                        <div class="new_games">
                                 <h3><span>New Games</span></h3>
                                 <ul class="list">
                                         <li>
-                                                @include("myfrontend.inc.gamecard")    
+                                                @include("myfrontend.inc.gamecard")
                                         </li>
                                         <li>
-                                                @include("myfrontend.inc.gamecard")    
+                                                @include("myfrontend.inc.gamecard")
                                         </li>
                                         <li>
-                                                @include("myfrontend.inc.gamecard")    
+                                                @include("myfrontend.inc.gamecard")
                                         </li>
                                         <li>
-                                                @include("myfrontend.inc.gamecard")    
+                                                @include("myfrontend.inc.gamecard")
                                         </li>
                                         <li>
-                                                @include("myfrontend.inc.gamecard")    
+                                                @include("myfrontend.inc.gamecard")
                                         </li>
                                 </ul>
                         </div>
-                </div>   
+                </div>
         </div>
 
         <div class="new_items">
@@ -104,7 +104,7 @@
                         <li>
                         @include("myfrontend.inc.itemcard")
                         </li>
-                        
+
                 </ul>
         </div>
 
@@ -135,7 +135,7 @@
                         <li>
                         @include("myfrontend.inc.itemcard")
                         </li>
-                        
+
                 </ul>
         </div>
 
@@ -194,25 +194,25 @@
                                         <a href="">
                                                 <h3>How To Buy</h3>
                                                 <p>Find out the buying guide here.</p>
-                                        </a>   
-                                        </li>   
+                                        </a>
+                                        </li>
                                         <li>
                                         <a href="">
                                                 <h3>How To Sell</h3>
                                                 <p>Find out the buying guide here.</p>
-                                        </a>   
-                                        </li>  
+                                        </a>
+                                        </li>
                                         <li>
                                         <a href="">
                                                 <h3>Beginner's Guide</h3>
                                                 <p>Find out the buying guide here.</p>
-                                        </a>   
-                                        </li>  
+                                        </a>
+                                        </li>
                                 </ul>
                                 </div>
                         </div>
                 </div>
         </div>
 </div>
-  
+<script src="{{asset('frontend/js/home.js')}}"></script>
 @endsection
