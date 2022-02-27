@@ -84,11 +84,6 @@
                 </div>
             </div>
         </div>
-        <div class="bottom_img">
-            <a href="">
-                <img src="{{ asset('images/cateback.png') }}" alt="">
-            </a>
-        </div>
     </div>
 
 

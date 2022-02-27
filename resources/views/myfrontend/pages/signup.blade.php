@@ -1,36 +1,36 @@
-@extends('layouts.myfrontend')
+@extends('layouts.myview')
 @section('content')
 
      <div class="container-fluid wrapc">
-        <div class="login_header">
+        <div class="signup_header">
             <div class="inner">
                 <div class="logo">
                     <h1>
                         <img src="{{ asset('images/leftlogo.png') }}" alt="">
                     </h1>
                 </div>
-                <div class="login_tiger">
+                <div class="signup_tiger">
                     <div class="tiger">
                         
                     </div>
                 </div>
             </div>
         </div>
-        <div class="login_content">
+        <div class="signup_content">
             <div class="inner">
-                <div class="login_box">
+                <div class="signup_box">
                     <div class="inner">
-                        <div class="login_form_wrap">
+                        <div class="signup_form_wrap">
                             <div class="inner">
-                                <div id="login_form">
+                                <div id="signup_form">
                                     <h3>SIGN UP</h3>
                                     <form action="">
                                         <ul>
                                             <li>
-                                                <p>Please use a valid email address for account verification.</p>
-                                                <label class="cpt-text" id="login_user">
+                                                <h2>Please use a valid email address for account verification.</h2>
+                                                <label class="cpt-text" id="signup_user">
                                                    <i class="fa-solid fa-envelope icon"></i>
-                                                   <input type="email" placeholder="Email" name="email" id="login_email" required="">
+                                                   <input type="email" placeholder="Email Address" name="email" id="signup_email" required="">
                                                 </label>
                                             </li>
                                             <li>
@@ -41,8 +41,8 @@
                                         </ul>
                                     </form>
                                 </div>
-                                <div id="login_form_accounts">
-                                    <h3>Sign in with existing login from a social network account</h3>
+                                <div id="signup_form_accounts">
+                                    <h2>Sign in with existing login from a social network account</h2>
                                     <ul class="accounts_list">
                                         <li>
                                             <i class="fa-brands fa-xl fa-facebook-square"></i>
