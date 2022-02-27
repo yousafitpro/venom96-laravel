@@ -10,13 +10,14 @@
     margin: 0 2em;
     padding-top: 50px;
 }
-.signup_header .logo h1 {
+.signup_header .logo h1 span{
     display: block;
-    font-size: 2.5em;
+    font-size: 40px;
     width: 3em;
     height: 1em;
     line-height: 999;
     overflow: hidden;
+    background: url("https://member.seagm.com/skin/images/seagm_member_logo_2020_text_black-b970e72c5c.svg") no-repeat center/contain;
 }
 .signup_content {
     margin-bottom: auto;
@@ -195,6 +196,20 @@
         background: #fff linear-gradient(0deg,rgba(0 0 0/5%),rgba(0 0 0/0));
         box-shadow: rgb(0 0 0 / 10%) 0 1px 0;
         height: 5em;
+    }
+    .signup_header .logo {
+        flex: none;
+        margin: 0 2em;
+        padding-top: 25px;
+    }
+    .signup_header .logo h1 span{
+        display: block;
+        font-size: 30px;
+        width: 3em;
+        height: 1em;
+        line-height: 999;
+        overflow: hidden;
+        background: url("https://member.seagm.com/skin/images/seagm_member_logo_2020_text_black-b970e72c5c.svg") no-repeat center/contain;
     }
     .signup_box>.inner {
         border-radius: 0em;

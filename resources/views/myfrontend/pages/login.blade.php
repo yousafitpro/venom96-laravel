@@ -6,7 +6,7 @@
             <div class="inner">
                 <div class="logo">
                     <h1>
-                        <img src="{{ asset('images/leftlogo.png') }}" alt="">
+                        <span></span>
                     </h1>
                 </div>
                 <div class="login_tiger">

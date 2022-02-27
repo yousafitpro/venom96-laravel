@@ -4,9 +4,9 @@
      <div class="container-fluid wrapc">
         <div class="signup_header">
             <div class="inner">
-                <div class="logo">
+            <div class="logo">
                     <h1>
-                        <img src="{{ asset('images/leftlogo.png') }}" alt="">
+                        <span></span>
                     </h1>
                 </div>
                 <div class="signup_tiger">
