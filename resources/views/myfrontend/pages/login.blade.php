@@ -72,7 +72,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="create_account">
+                        <div class="L_create_account">
                             <div class="inner">
                                 <h1>One account for all SEAGM services</h1>
                                 <p>First time here? Create your account to enjoy shopping on SEAGM.</p>

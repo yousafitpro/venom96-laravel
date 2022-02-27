@@ -152,38 +152,38 @@
     list-style-type: none;
     padding: 5px;
 }
-.create_account {
+.L_create_account {
     order: -1;
     flex: 1;
     padding: 4em;
     background-color: #7184d0;
-    background-image: linear-gradient(315deg,hsl(210 100% 50%/0%),hsl(210 100% 50%/60%)),url("../../images/signup-left.PNG");
+    background-image: linear-gradient(315deg,hsl(210 100% 50%/0%),hsl(210 100% 50%/60%)),url("../../images/login-left.PNG");
     background-repeat: no-repeat;
     background-position: center,center;
     background-size: cover;
     color: #fff;
     border-radius: 0 0 100% 0;
 }
-.create_account>.inner {
+.L_create_account>.inner {
     max-width: 25em;
 }
-.create_account h1 {
+.L_create_account h1 {
     font-size: 25px;
     font-weight: bolder;
     text-transform: uppercase;
     margin-bottom: 1em;
     line-height: 1.5em;
 }
-.create_account p {
+.L_create_account p {
     font-size: 1em;
 }
-#login_form .btw {
+.L_create_account .btw {
     display: block;
     font-size: 1.166667em;
     font-weight: 700;
 }
-#login_form .btw{
-    background-color: #1E90FF;
+.L_create_account .btw{
+    background-color: rgb(154, 205, 50);
     outline: none;
     border: none;
     color: white;
@@ -191,9 +191,9 @@
     padding: 10px 10px;
     width: 100%;
 }
-#login_form .btw a{
+.L_create_account .btw a{
    text-decoration: none;
-   color: white;
+   color: white !important;
    font-size: 14px;
 }
 .reg_steps {
@@ -225,6 +225,75 @@
     margin-right: 0.5em;
     flex: none;
     align-self: flex-start;
+}
+
+@media only screen and (max-width: 480px){
+    .login_header {
+        background: #fff linear-gradient(0deg,rgba(0 0 0/5%),rgba(0 0 0/0));
+        box-shadow: rgb(0 0 0 / 10%) 0 1px 0;
+        height: 5em;
+    }
+    .login_box>.inner {
+        border-radius: 0em;
+        box-shadow: none;
+        flex-direction: column-reverse;
+        min-height: 40em;
+    }
+    .login_content>.inner, .login_footer>.inner, .login_header>.inner {
+        width: 25em;
+        padding: 0em;
+        width: 100%;
+    }
+    .login_form_wrap h3 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    .login_form_wrap h2 {
+        font-size: 12px !important;
+        line-height: 20px;
+        padding: 0px 40px 0 0;
+        text-transform: capitalize;
+        opacity: 0.9 !important;
+    }
+    .login_form_wrap {
+        padding: 2em 2em 2em 3em;
+    }
+    .login_form_wrap ul {
+        margin-left: -44px;
+    }
+    .L_create_account .btw {
+        background-color: rgb(154, 205, 50);
+        outline: none;
+        color: white;
+        border-radius: 5px;
+        padding: 13px 10px;
+        width: 100%;
+    }
+    .L_create_account {
+        flex: none;
+        display: flex;
+        padding: 3em 2em;
+        background-image: linear-gradient(315deg,hsl(210 100% 50%/0%),hsl(210 100% 50%/60%)),url("https://seagm-media.seagmcdn.com/member/art/bg_0.jpg!webp");
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 0;
+    }
+    .container-fluid{
+        width: 100%;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .reg_steps>li>div:before {
+        background: rgba(0 0 0/5%);
+    }
+    .L_create_account h1 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .L_create_account p {
+        font-size: 12px;
+    }
 }
  
 
