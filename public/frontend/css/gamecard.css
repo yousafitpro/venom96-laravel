@@ -37,3 +37,10 @@
     display: block;
     margin: 0 1em;
 }
+
+
+@media only screen and (max-width: 480px){
+    .game_card .info b {
+        display: none;
+    }
+}
