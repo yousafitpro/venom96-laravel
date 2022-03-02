@@ -175,6 +175,7 @@ html {
 }
 .new_items h3, .hot_items h3 {
   font-size: 20px;
+  padding-left: 9px;
   font-family: var(--SiteFF);
   font-weight: bold;
   margin-bottom: 1em;
@@ -215,6 +216,7 @@ html {
 .home_features ul {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -35px;
 }
 .home_features li {
   flex: 15em;
@@ -241,6 +243,7 @@ html {
 }
 .home_guide ul {
   display: flex;
+  margin-left: -35px;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
@@ -276,6 +279,9 @@ html {
   padding-bottom: 10px !important;
   color: gray;
 }
+.features .home_guide .icon{
+  display: none;
+}
 
 
 /******************** Footer ****************/
@@ -296,6 +302,7 @@ html {
       display: flex;
       column-gap: 27px;
       overflow-x: auto;
+      margin-left: -32px;
       flex: 5;
   }
   .homegames .list::-webkit-scrollbar {
@@ -303,6 +310,7 @@ html {
   }
   .new_games .list {
     display: flex;
+    margin-left: -32px;
     column-gap: 27px;
     overflow-x: auto;
     flex: 5;
@@ -312,19 +320,22 @@ html {
   }
   .homegames .category {
     display: block;
-    padding: 45px 0;
+    padding: 25px 0;
   }
   .homegames .category h3 img{
     display: none;
   }
   .homegames .category h3 span {
     padding-bottom: 30px;
-    margin-left: -90px;
+    margin-left: -126px;
  }
  .new_games h3 span {
   padding-bottom: 30px;
-  padding-left: 44px;
+  padding-left: 10px;
  }
+ .pc_games.category h3 span {
+  margin-left: -170px;
+}
  .new_items ul, .hot_items ul {
   display: flex;
   width: 100%;
@@ -394,6 +405,19 @@ html {
 }
 .home_guide ul li {
   margin-bottom: -30px;
+}
+.footer{
+  padding: 20px 20px !important;
+  background: #f8f8f8;
+}
+.footerRight {
+  float: left;
+}
+.copy_st{
+  font-size: 15px;
+}
+.social_icons {
+  padding-left: 20px;
 }
 }
 
