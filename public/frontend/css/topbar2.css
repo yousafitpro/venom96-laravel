@@ -1,0 +1,226 @@
+.maintop2.container-fluid {
+    padding: 0 40px;
+}
+.maintop2>.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6em;
+}
+#header_logo a {
+    display: flex;
+    align-items: center;
+    color: currentColor;
+    text-decoration: none;
+}
+#header_logo svg {
+    width: 9.6em;
+    height: 1.5em;
+    vertical-align: top;
+    align-items: center;
+    padding-left: 40px;
+}
+#header_search {
+    flex: auto;
+    margin: 7px auto 0 2em;
+    max-width: 30em;
+}
+#header_search .cpt-search {
+    --CPT-BDR: 2em;
+}
+
+.cpt-search {
+    display: flex;
+    align-items: center;
+    border: rgba(0 , 0, 0, 0.25) 1px solid ;
+    border-radius: var(--CPT-BDR);
+    box-shadow: var(--shadow-focus-color,transparent) 0 0 0.5em,var(--background-focus-color,transparent) 9999em 0 0 inset;
+}
+#header_search .cpt-search>input {
+    padding: 8px 1.5em;
+}
+.cpt-search>.btw {
+    flex: none;
+    margin: calc(var(--CPT-BDW) * -1);
+    transform: none;
+}
+.btw>span[icon-only] {
+    display: block;
+    line-height: 999;
+    overflow: hidden;
+    width: var(--CPT-UH);
+    height: var(--CPT-UH);
+    padding: calc(var(--CPT-FS)/ 2);
+}
+
+.btw>span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: var(--line-height,2);
+    padding: var(--padding-block,.5em) var(--padding-inline,2em);
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#user_nav a.signin {
+    display: block;
+    color: currentColor;
+    font-weight: 700;
+    border-radius: 0.25em;
+    text-decoration: none;
+    white-space: nowrap;
+}
+#user_nav a.signin span {
+    display: block;
+    line-height: 2;
+    padding: 0.5em;
+}
+[class*=cpt-]>input:not([type=checkbox]):not([type=radio]):not([type=range]), [class*=cpt-]>select, [class*=cpt-]>textarea {
+    font-size: var(--CPT-FS);
+    font-family: var(--CPT-FF);
+    font-weight: 500;
+    color: var(--CPT-INPTCL);
+    background: 0 0;
+    height: calc(var(--CPT-UH) - (var(--CPT-BDW) * 2));
+    line-height: var(--CPT-LH);
+    margin: 0;
+    padding: 0 var(--CPT-INPTPD);
+    border: none;
+    border-radius: 5px;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+[class*=cpt-]>input[type=search] {
+    padding-right: var(--CPT-INPTPD)!important;
+}
+.cpt-search>input {
+    flex: auto;
+    width: 100%;
+    min-width: calc(var(--CPT-UH) + (var(--CPT-FS) * 2));
+}
+.maintop2 .fa-lg {
+    padding-right: 15px;
+    font-size: 22px;
+}
+.nav_ctrl{
+    display: none;
+}
+#mb_user_nav{
+    display: none;
+}
+/* The sidebar menu */
+.sidebar {
+    height: 100%; 
+    width: 265px;
+    width: 0; 
+    position: fixed; 
+    z-index: 999; 
+    top: 0;
+    background-color: white;
+    left: 0; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+  }
+  .links{
+      padding-top: 30px;
+      border-top: rgba(0 , 0, 0, 0.25) 1px solid;
+  }
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 480px){
+    #header_logo{
+        display: none;
+    }
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+    .slider {
+        padding-top: 0px;
+    }
+    .nav_ctrl{
+        display: block;
+        padding-left: 20px;
+    }
+   
+    #mb_user_nav{
+        display: block;
+    }
+    #user_nav{
+        display: none;
+    }
+    #mb_user_nav a .icon{
+        color: black !important;
+        font-size: 30px;
+        padding-top: 3px;
+        padding-right: 7px;
+    }
+    #header_search .cpt-search>input {
+        padding: 5px 1.5em;
+    }
+    #header_search {
+        flex: auto;
+        margin: 7px 10px 0 0;
+        max-width: 264px;
+    }
+    .maintop2 .fa-lg {
+        padding-right: 15px;
+        font-size: 20px;
+    }
+}

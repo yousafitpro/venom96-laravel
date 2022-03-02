@@ -113,7 +113,7 @@ html {
   margin: 5em 0;
 }
 .homegames>.inner {
-  margin: 0 auto;
+  margin: -41px 0 auto 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -289,6 +289,9 @@ html {
 
 
 @media only screen and (max-width: 480px){
+  .maintop1{
+    display: none;
+  }
     .homegames .list {
       display: flex;
       column-gap: 27px;

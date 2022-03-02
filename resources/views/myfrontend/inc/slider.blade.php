@@ -1,7 +1,7 @@
 
 <div class="swiffy-slider slider-item-ratio slider-nav-round slider-nav-visible" 
     style="
-    --swiffy-slider-item-ratio:100/33.3;
+    --swiffy-slider-item-ratio:100/46.3;
     --swiffy-slider-nav-light:lightcyan;
     --swiffy-slider-nav-dark:darkolivegreen;
     --swiffy-slider-nav-zoom:85%;
