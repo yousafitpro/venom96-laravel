@@ -1,5 +1,5 @@
 
-@extends('layouts.frontend')
+@extends('layouts.myfrontend')
 @section('content')
     <link href="{{asset('css/product-list.css')}}" rel="stylesheet">
 
@@ -178,9 +178,9 @@
                                       <ul>
 
                                           <li class="chat">
-                                              <a href="{{route('home.productDetails1',$p->id)}}">
-                                                  <button  class="btn btn-primary">Add To Cart</button>
-                                              </a>
+{{--                                              <a href="{{route('home.productDetails',$p->id)}}">--}}
+{{--                                                  <button  class="btn btn-primary">Add To Cart</button>--}}
+{{--                                              </a>--}}
                                           </li>
                                       </ul>
                                   </div>

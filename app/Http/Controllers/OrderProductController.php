@@ -70,7 +70,7 @@ class OrderProductController extends Controller
         }
 
 //        dd($products);
-        return view('frontend.pages.cart',['products'=>$products,'total'=>$total]);
+        return view('myfrontend.pages.cart',['products'=>$products,'total'=>$total]);
     }
     public function removeProduct($id)
     {
