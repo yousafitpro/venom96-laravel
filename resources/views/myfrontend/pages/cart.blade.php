@@ -1,5 +1,5 @@
 
-@extends('layouts.frontend')
+@extends('layouts.myfrontend')
 @section('content')
     <link href="{{asset('css/cart.css')}}" rel="stylesheet">
 

@@ -9,12 +9,13 @@ Route::get('/signin',function (){
 Route::get('/signup',function (){
     return view('myfrontend.pages.signup');
 });
-Route::get('/productlist',function (){
-    return view('myfrontend.pages.productlist');
-});
-Route::get('/product',function (){
-    return view('myfrontend.pages.product');
-});
-Route::get('/cart',function (){
-    return view('myfrontend.pages.cart');
-});
+
+
+
+
+Route::get('/cart/{id}',[App\Http\Controllers\OrderProductController::class, 'cart']);
+Route::get('/product/{id}',[App\Http\Controllers\myhomeController::class, 'productDetails']);
+Route::get('/productlist/{id}',[App\Http\Controllers\myhomeController::class, 'gameDetails']);
+//Route::get('/cart',function (){
+//    return view('myfrontend.pages.cart');
+//});

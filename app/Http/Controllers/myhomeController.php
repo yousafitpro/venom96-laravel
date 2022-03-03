@@ -13,7 +13,7 @@ class myhomeController extends Controller
     {
         $cate=category::find($id);
         $products=Helper::GameProducts($id);
-        return view('frontend.pages.gamedetails',['item'=> $cate,'products'=>$products]);
+        return view('myfrontend.pages.product-list',['item'=> $cate,'products'=>$products]);
     }
     public function index()
     {
@@ -23,11 +23,11 @@ class myhomeController extends Controller
     {
 
         $product=product::find($id);
-        return view('frontend.pages.product',['product'=>$product]);
+        return view('myfrontend.pages.product',['product'=>$product]);
     }
     public function productCart($id)
     {
-        return view('frontend.pages.cart');
+        return view('myfrontend.pages.cart');
     }
     public function productList($id)
     {

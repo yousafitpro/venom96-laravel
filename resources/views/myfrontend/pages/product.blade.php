@@ -1,5 +1,5 @@
 
-@extends('layouts.frontend')
+@extends('layouts.myfrontend')
 @section('content')
     <link href="{{asset('css/product.css')}}" rel="stylesheet">
  <div class="container-fluid">
@@ -547,19 +547,19 @@ function addToCart()
         order_id=localStorage.getItem("order_id")
     }
 
-    $.ajax({
-        type: 'post',
-        url: "{{route('home.addToCart',$product->id)}}",
-        data: {"_token": "{{ csrf_token() }}",
-        order_id,product_id
-        },
-        success: function (data) {
-            console.log(data.order_id)
-            localStorage.setItem("order_id",data.order_id)
-            alert("Product Added")
-          window.location.href=data.url
-        }
-    });
+    {{--$.ajax({--}}
+    {{--    type: 'post',--}}
+    {{--    url: "{{route('home.addToCart',$product->id)}}",--}}
+    {{--    data: {"_token": "{{ csrf_token() }}",--}}
+    {{--    order_id,product_id--}}
+    {{--    },--}}
+    {{--    success: function (data) {--}}
+    {{--        console.log(data.order_id)--}}
+    {{--        localStorage.setItem("order_id",data.order_id)--}}
+    {{--        alert("Product Added")--}}
+    {{--      window.location.href=data.url--}}
+    {{--    }--}}
+    {{--});--}}
 }
 
   function closePopup(){
