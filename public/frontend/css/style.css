@@ -90,6 +90,8 @@ html {
 /***************** Slider **************/
 .slider{
   padding-top: 100px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 .slider-container {
   overflow-y: hidden;
@@ -297,6 +299,11 @@ html {
 @media only screen and (max-width: 480px){
   .maintop1{
     display: none;
+  }
+  .slider{
+    padding-top: 65px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .slider-container {
     --swiffy-slider-item-width: 100% !important;

@@ -196,9 +196,6 @@
     }
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
-    .slider {
-        padding-top: 65px;
-    }
     .swiffy-slider {
         position: none;
         --swiffy-slider-item-reveal: 0%;
