@@ -1,11 +1,14 @@
 @extends('layouts.myfrontend')
 @section('content')
 
-<div class="container">
-
-        <div class="slider">
+<div class="container-fluid">
+      <div class="slider">
              @include("myfrontend.inc.slider")
         </div>
+</div>
+
+       
+ <div class="container">
 
         <div class="homegames">
                 <div class="inner">

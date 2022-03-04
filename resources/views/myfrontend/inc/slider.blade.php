@@ -1,5 +1,5 @@
 
-<div class="swiffy-slider slider-item-ratio slider-nav-round slider-nav-visible" 
+<div class="swiffy-slider slider-item-ratio slider-nav-round slider-nav-visible " 
     style="
     --swiffy-slider-item-ratio:100/46.3;
     --swiffy-slider-nav-light:lightcyan;

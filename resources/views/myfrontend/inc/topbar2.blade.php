@@ -1,5 +1,5 @@
 
-<div class="maintop2 container-fluid">
+<div class="maintop2 container-fluid" id="navbar">
     <div class="inner" >
         <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>

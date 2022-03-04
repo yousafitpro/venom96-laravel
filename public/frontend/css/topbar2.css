@@ -175,10 +175,15 @@
       padding-top: 30px;
       border-top: rgba(0 , 0, 0, 0.25) 1px solid;
   }
-
-
-
-
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+    padding: 10px 0 !important;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;;
+  }
 
 
 
@@ -192,7 +197,11 @@
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
     .slider {
-        padding-top: 0px;
+        padding-top: 65px;
+    }
+    .swiffy-slider {
+        position: none;
+        --swiffy-slider-item-reveal: 0%;
     }
     .nav_ctrl{
         display: block;
@@ -207,8 +216,8 @@
     }
     #mb_user_nav a .icon{
         color: black !important;
-        font-size: 30px;
-        padding-top: 3px;
+        font-size: 27px;
+        padding-top: 0px;
         padding-right: 7px;
     }
     #header_search .cpt-search>input {
@@ -223,4 +232,13 @@
         padding-right: 15px;
         font-size: 20px;
     }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 999;
+        padding: 0px 0 !important;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;;
+      }
 }

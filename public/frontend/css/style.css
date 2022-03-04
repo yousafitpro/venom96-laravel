@@ -150,7 +150,7 @@ html {
 /********************** New Games *************************/
 
 .new_games {
-  margin: 5em 0;
+  margin: -3em 0;
 }
 .new_games h3 span {
   font-size: 20px;
@@ -298,6 +298,12 @@ html {
   .maintop1{
     display: none;
   }
+  .slider-container {
+    --swiffy-slider-item-width: 100% !important;
+  }
+  .slider-nav-round .slider-nav::after, .slider-nav-square .slider-nav::after {
+    margin: 0rem !important;
+}
     .homegames .list {
       display: flex;
       column-gap: 27px;
@@ -401,6 +407,7 @@ html {
   font-size: 14px;
 }
 .features .home_guide .icon {
+  display: block;
   color: gray;
 }
 .home_guide ul li {
