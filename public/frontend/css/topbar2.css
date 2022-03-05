@@ -1,5 +1,5 @@
 .maintop2.container-fluid {
-    padding: 0 40px;
+    padding: 8px 40px;
 }
 .maintop2>.inner {
     display: flex;
@@ -181,7 +181,7 @@
     width: 100%;
     background-color: white;
     z-index: 999;
-    padding: 10px 0 !important;
+    padding: 10px 45px 10px 0px !important;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;;
   }
 

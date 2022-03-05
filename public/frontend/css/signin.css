@@ -227,7 +227,18 @@
     flex: none;
     align-self: flex-start;
 }
-
+.login_form_wrap input {
+    border: 0;
+    width: 100%;
+}
+svg.svg-inline--fa.fa-arrow-right {
+    font-size: 25px;
+    font-weight: 700 !important;
+}
+.btn-primary {
+    margin: 0px !important;
+    padding-top: 9px !important;
+}
 @media only screen and (max-width: 480px){
     .login_header {
         background: #fff linear-gradient(0deg,rgba(0 0 0/5%),rgba(0 0 0/0));

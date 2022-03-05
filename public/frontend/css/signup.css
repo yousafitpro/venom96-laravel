@@ -7,8 +7,8 @@
 }
 .signup_header .logo {
     flex: none;
-    margin: 0 2em;
-    padding-top: 50px;
+    margin: 0 5em;
+    padding-top: 38px;
 }
 .signup_header .logo h1 span{
     display: block;
@@ -21,6 +21,7 @@
 }
 .signup_content {
     margin-bottom: auto;
+    padding: 0px 35px;
 }
 .signup_content>.inner {
     padding: 0 2em;
@@ -29,7 +30,7 @@
 .signup_content>.inner, .signup_footer>.inner, .signup_header>.inner {
     max-width: 100em;
     margin: 0 auto;
-    padding: 2em;
+    padding: 0em 2em 1em 2em;
     box-sizing: border-box;
 }
 .signup_box {
@@ -49,7 +50,7 @@
     box-shadow: rgb(0 0 0 / 3%) 0 0 1em, rgb(0 0 0 / 5%) 0 1em 2em, rgb(0 0 0 / 3%) 0 2em 4em;
     overflow: hidden;
     display: flex;
-    min-height: 40em;
+    min-height: 35em;
 }
 .signup_form_wrap {
     flex: 1;
@@ -103,6 +104,7 @@
 .cpt-combine {
     display: flex;
     line-height: 3em;
+    height: 3em;
     align-items: center;
     border: rgb(0 0 0 / .25) 1px solid;
     border-radius: 5px;
@@ -110,6 +112,7 @@
 .cpt-combine>[class*=cpt-] {
     flex: auto;
     border: none;
+    line-height: 3em;
     border-radius: 0;
     background: 0 0!important;
     line-height: 0em;
@@ -132,6 +135,10 @@
     font-weight: 400 !important;
     justify-content: center;
     opacity: .5 !important;
+}
+.signup_form_wrap input {
+    border: 0;
+    width: 100%;
 }
 #signup_form_accounts {
     margin: 4em auto 0;
@@ -216,6 +223,10 @@
         box-shadow: none;
         flex-direction: column-reverse;
         min-height: 40em;
+    }
+    .signup_content {
+        margin-bottom: auto;
+        padding: 0px 0px;
     }
     .signup_content>.inner, .signup_footer>.inner, .signup_header>.inner {
         width: 100%;

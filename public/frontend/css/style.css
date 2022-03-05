@@ -53,14 +53,13 @@ html {
 
 .maintop1{
   background: #f8f8f8;
-  padding: 0 40px;
+  padding: 18px 40px 5px 40px;
 }
 .maintop1>.inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   vertical-align: middle;
-  height: 4em;
 }
 .maintop1 ul {
   display: flex;
@@ -89,9 +88,12 @@ html {
 
 /***************** Slider **************/
 .slider{
-  padding-top: 100px;
-  padding-left: 80px;
-  padding-right: 80px;
+    border-top: 1px rgba(0,0,0,0.1) solid;
+}
+.slider .inner{
+    padding-top: 37px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 .slider-container {
   overflow-y: hidden;
@@ -300,8 +302,8 @@ html {
   .maintop1{
     display: none;
   }
-  .slider{
-    padding-top: 65px;
+  .slider .inner{
+    padding-top: 64px;
     padding-left: 0px;
     padding-right: 0px;
   }

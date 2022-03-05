@@ -3,7 +3,9 @@
 
 <div class="container-fluid">
       <div class="slider">
-             @include("myfrontend.inc.slider")
+             <div class="inner">
+               @include("myfrontend.inc.slider")
+             </div>
         </div>
 </div>
 
