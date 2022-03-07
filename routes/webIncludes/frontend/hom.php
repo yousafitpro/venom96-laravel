@@ -11,7 +11,7 @@ Route::get('/signup',function (){
 });
 
 
-
+//asasasa
 
 Route::get('/cart/{id}',[App\Http\Controllers\OrderProductController::class, 'cart']);
 Route::get('/product/{id}',[App\Http\Controllers\myhomeController::class, 'productDetails']);
