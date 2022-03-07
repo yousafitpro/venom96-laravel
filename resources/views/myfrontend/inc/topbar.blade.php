@@ -8,10 +8,6 @@
         <li><a href="#">About Us</a></li>
         <li><a href="#">Contact Us</a></li>
         <li><a href="#">Payment Methods</a></li>
-
-@if(auth()->check())
-            <li style="float:right"><a >( {{auth()->user()->fname." ".auth()->user()->lname}} )</a></li>
-    @endif
     </ul>
     <div class="setting">
         <i class="fa fa-flag" aria-hidden="true"></i>

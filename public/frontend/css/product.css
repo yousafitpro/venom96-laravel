@@ -1,9 +1,5 @@
 /*******************************/
-html,body{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+
 .container-fluid{
     padding: 0 35px;
     font-family: "Readex Pro","Arial","Verdana","PingFang","Helvetica",system-ui,sans-serif;
@@ -15,6 +11,7 @@ html,body{
     background: #fff;
     border: 1px rgba(0,0,0,.1) solid;
     border-radius: 0.5em;
+    height: 360px;
     overflow: hidden;
 }
 .breadcrumb-item a{
@@ -23,9 +20,12 @@ html,body{
     font-weight: bold;
 }
 .product_img img {
+    position: absolute;
+    left: 0;
+    right: 0;
     z-index: 1;
     margin: auto;
-    max-width: 350px ;
+    max-width: 350px;
     max-height: 350px;
 }
 .breadcrumb{
@@ -89,8 +89,11 @@ form {
     margin: 2em 0;
 }
 .purchase li {
-    display: table-row;
+    display: flex;
     list-style: none;
+}
+.purchase .form-style-2 ul li .input{
+    width: 100% !important;
 }
 .quantity_box .cpt-quantity {
     flex: auto;
@@ -242,11 +245,7 @@ form {
     background-clip: padding-box;
 
 }
-input{  
-    border: 0;
-    width: 10%;
-}
-nput::-webkit-outer-spin-button,
+input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
@@ -293,15 +292,15 @@ input:disabled{
     display: table-cell;
     white-space: nowrap;
 }
-.cart_btn{
+.total .cart_btn{
     padding-top: 10px;
 }
-.cart_btn .fa{
+.total .cart_btn .fa{
     font-weight: bold;
     font-size: 20px;
     padding-right: 10px;
 }
-.cart_btn .btn{
+.total .cart_btn .btn{
     font-size: 14px;
     text-transform: uppercase;
 }
@@ -547,7 +546,7 @@ input:disabled{
         padding-right: 0px !important;
     }
     .item_photo {
-        margin: -2em 0 0;
+        margin: 4em 0 0;
         padding: 5px;
         border-radius: 0;
         background: linear-gradient(0deg,#f8f8f8,#fff);
@@ -801,6 +800,7 @@ input:disabled{
     .review .top ul {
         display: block;
         justify-content: center;
+        padding: 0;
     }
     .review .top{
         padding: 2em 0 0 0;
@@ -826,6 +826,8 @@ input:disabled{
     .review .comment_list {
         display: grid;
         grid-gap: 1em 2em;
+        padding: 0;
+        grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
     }
   
   }

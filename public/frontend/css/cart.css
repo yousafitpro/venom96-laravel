@@ -6,13 +6,19 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+div#ua-PayNowButton {
+    margin-top: -12px;
+}
+.cart input {
+    width: 5%;
+}
 .cart h1 {
     font-weight: 500;
     font-size: 16px;
     margin: 1em 0;
 }
 .item_calculator .checkbox_wrp {
-    margin: 0 0 0 2em;
+    margin: 13px 0 17px 0em;
 }
 .item_calculator {
     position: -webkit-sticky;
@@ -39,7 +45,7 @@
 }
 
 .item_calculator .count{
-    margin-right: 24em;
+    margin-right: 42em;
     margin-left: 3em;
     font-size: 14px;
 }
@@ -47,7 +53,7 @@
     font-size: 14px;
 }
 .item_calculator .price {
-    margin: 0 1em;
+    margin: 0px 5em 0 0;
     font-size: 16px;
     font-weight: 500;
     font-family: var(--SiteFF);
@@ -63,6 +69,7 @@
 .item_calculator .btn-primary {
     border-radius: 0px;
     width: 165px;
+    height: 53px;
 }
 .item_calculator .cart_btn .fa{
     margin-right: 5px !important;

@@ -1,1 +1,1 @@
-<script src="{{asset('frontend/js/script.js')}}"></script>
+<script src="{{asset('frontend/js/home.js')}}"></script>

@@ -1,7 +1,6 @@
 
 @extends('layouts.myfrontend')
 @section('content')
-    <link href="{{asset('css/product.css')}}" rel="stylesheet">
  <div class="container-fluid">
    <div class="row">
      <div class="col-md-4">
@@ -530,8 +529,7 @@
    </div>
 </div>
 
-<script>
-
+<script
 function addToCart()
 {
 
@@ -595,8 +593,6 @@ $(document).ready(function(){
     	    	});
  		});
 </script>
- <script src="{{asset('js/product.js')}}">
- </script>
 @endsection
 
 

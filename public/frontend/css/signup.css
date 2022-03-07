@@ -50,7 +50,7 @@
     box-shadow: rgb(0 0 0 / 3%) 0 0 1em, rgb(0 0 0 / 5%) 0 1em 2em, rgb(0 0 0 / 3%) 0 2em 4em;
     overflow: hidden;
     display: flex;
-    min-height: 35em;
+    min-height: 30em;
 }
 .signup_form_wrap {
     flex: 1;
