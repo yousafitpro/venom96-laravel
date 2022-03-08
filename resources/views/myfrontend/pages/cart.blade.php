@@ -1,5 +1,5 @@
 
-@extends('layouts.myfrontend')
+@extends('layouts.cartfrontend')
 @section('content')
 
     <section class="cart">
