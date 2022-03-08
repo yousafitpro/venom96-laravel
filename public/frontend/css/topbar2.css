@@ -192,6 +192,9 @@
 
 
 @media only screen and (max-width: 480px){
+    .maintop2.container-fluid {
+        padding: 0px 0px;
+    }
     #header_logo{
         display: none;
     }
@@ -212,12 +215,13 @@
     #user_nav{
         display: none;
     }
-    #mb_user_nav a .icon{
+    #mb_user_nav a .icon {
         color: black !important;
-        font-size: 27px;
+        font-size: 24px;
         padding-top: 0px;
-        padding-right: 7px;
+        padding-right: 22px;
     }
+    
     #header_search .cpt-search>input {
         padding: 5px 1.5em;
     }
