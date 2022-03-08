@@ -1,5 +1,6 @@
 .maintop2.container-fluid {
     padding: 8px 40px;
+    z-index: 1000;
 }
 .maintop2>.inner {
     display: flex;

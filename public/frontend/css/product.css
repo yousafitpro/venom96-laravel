@@ -546,7 +546,7 @@ input:disabled{
         padding-right: 0px !important;
     }
     .item_photo {
-        margin: 4em 0 0;
+        margin: 0 0 0;
         padding: 5px;
         border-radius: 0;
         background: linear-gradient(0deg,#f8f8f8,#fff);

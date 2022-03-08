@@ -1,4 +1,5 @@
-.inner{
+
+.banner .inner{
     display: grid;
     background-color: #889A8A;
     padding: 2em 3em 0;
@@ -610,9 +611,10 @@ article p {
 }
 
 @media only screen and (max-width: 480px){
-    .inner {
+    
+    .banner .inner {
         grid-gap: 1.5em 2em;
-        padding: 1.5em 1.5em 0;
+        padding: 1em 1em;
     }
     .sorting {
         padding-bottom: 15px;
@@ -649,14 +651,17 @@ article p {
         padding-left: 0px;
         height: 240px;
     }
-    .inner .row{
+    .banner .inner .row{
         flex-wrap: nowrap !important;
     }
-    .inner .row .col-md-3{
+    .banner .inner .row .col-md-3{
         display: none;
     }
     #game_info h1{
         font-size: 21px;
+    }
+    #game_info ul {
+        margin: 10px 0 0 -43px;
     }
     #game_info ul li {
         padding-left: 0px;
@@ -747,6 +752,7 @@ article p {
         box-shadow: rgb(0 0 0 / 10%) 0 0 0 1px inset;
         display: block;
         padding: 1.5em 1.5em 1em;
+        margin-right: 10px;
     }
     .item_list .tit {
         grid-template-columns: 4.5em auto;
@@ -808,10 +814,10 @@ article p {
         display: none;
     }
     .product_list {
-        padding: 0px 0em 0em 7px;
+        padding: 0 0px 0 11px;
     }
     .about {
-        padding: 3em 0em 2em 0em;
+        padding: 55px 23px 1px 0px;
     }
     .about .row {
         padding-left: 10px;

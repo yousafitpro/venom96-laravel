@@ -1,9 +1,8 @@
 
 @extends('layouts.myfrontend')
 @section('content')
-    <link href="{{asset('css/product-list.css')}}" rel="stylesheet">
 
-    <div class="container-fluid">
+    <div class="banner">
         <div class="inner">
             <div class="row">
                 <div class="col-md-2">
@@ -32,7 +31,8 @@
                 </div>
             </div>
         </div>
-        <div class="content">
+    <div class="container-fluid">
+      <div class="content">
             <div class="inside">
                <div class="item_filter">
                 <div class="filter_ctrl"><span>Filter</span></div>
@@ -227,6 +227,7 @@
                 </div>
             </div>
         </div>
+      </div>
     </div>
   <script>
       // Layout Toggle

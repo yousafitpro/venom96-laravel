@@ -1,7 +1,7 @@
 @extends('layouts.myview')
 @section('content')
 
-     <div class="container-fluid wrapc">
+     <div class="signin container-fluid wrapc">
         <div class="login_header">
             <div class="inner">
                 <div class="logo">

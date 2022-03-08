@@ -2,7 +2,6 @@
 @extends('layouts.myfrontend')
 @section('content')
 
-
     <section class="cart">
         <div class="inner">
             <form action="" method="post">
