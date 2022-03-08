@@ -531,6 +531,9 @@ input:disabled{
     pointer-events: none;
   }
   @media (max-width: 676px) {
+      .product{
+          margin-top: 65px;
+      }
     .container-fluid {
         padding: 0px 12px 0px 4px;
     }

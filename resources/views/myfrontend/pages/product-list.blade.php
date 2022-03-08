@@ -2,7 +2,8 @@
 @extends('layouts.myfrontend')
 @section('content')
 
-    <div class="banner">
+  <div class="productlist">
+  <div class="banner">
         <div class="inner">
             <div class="row">
                 <div class="col-md-2">
@@ -229,6 +230,7 @@
         </div>
       </div>
     </div>
+  </div>
   <script>
       // Layout Toggle
     const changeState = () => {

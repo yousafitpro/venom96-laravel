@@ -1,7 +1,8 @@
 @extends('layouts.myfrontend')
 @section('content')
 
-<div class="container-fluid">
+<div class="index">
+<div class=" container-fluid">
       <div class="slider">
              <div class="inner">
                @include("myfrontend.inc.slider")
@@ -252,6 +253,7 @@
                         </div>
                 </div>
         </div>
+</div>
 </div>
 <script src="{{asset('frontend/js/home.js')}}"></script>
 @endsection

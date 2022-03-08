@@ -1,4 +1,6 @@
-
+.productlist {
+    overflow-x: hidden;
+}
 .banner .inner{
     display: grid;
     background-color: #889A8A;
@@ -611,7 +613,9 @@ article p {
 }
 
 @media only screen and (max-width: 480px){
-    
+    .productlist{
+        margin-top: 64px;
+      }
     .banner .inner {
         grid-gap: 1.5em 2em;
         padding: 1em 1em;
